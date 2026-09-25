@@ -696,6 +696,18 @@
             font-size: 1.2rem;
         }
 
+        .contact-info p a {
+            color: var(--silver);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease, color 0.3s ease;
+        }
+
+        .contact-info p a:hover {
+            color: #ffffff;
+            border-bottom-color: var(--silver);
+        }
+
         /* ===== Footer ===== */
         footer {
             background: #050505;
@@ -1013,7 +1025,7 @@
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
             <div class="contact-info">
-                <p><span>📞</span> Phone: 01000000000</p>
+                <p><span>📞</span> Phone: <a href="tel:+201040931823">+20 104 093 1823</a></p>
                 <p><span>📍</span> Address: Cairo, Egypt</p>
                 <p><span>✉️</span> Email: info@dentalstore.com</p>
             </div>
