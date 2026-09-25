@@ -102,6 +102,7 @@
             font-weight: 700;
             color: var(--silver);
             letter-spacing: 0.4px;
+            text-decoration: none;
         }
 
         .logo-badge {
@@ -112,12 +113,15 @@
             height: 42px;
             border-radius: 12px;
             background: #050505;
-            color: var(--silver);
             box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+            overflow: hidden;
+            flex: 0 0 auto;
         }
 
-        .tooth {
-            font-size: 1.4rem;
+        .logo-badge img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -864,10 +868,10 @@
     <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-content">
-            <div class="logo">
-                <span class="logo-badge"><span class="tooth">🦷</span></span>
+            <a class="logo" href="#home" aria-label="Premo Dent - home">
+                <span class="logo-badge"><img src="logo-mark-96.png" alt="" width="32" height="32"></span>
                 <span>Premo Dent</span>
-            </div>
+            </a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
