@@ -40,19 +40,6 @@
             transition: background 0.3s ease, color 0.3s ease;
         }
 
-        body.dark-mode {
-            --dark: #ffffff;
-            --text: #e4e6e9;
-            --muted: #aeb3ba;
-            --light: #090a0b;
-            --white: #f7f7f7;
-            --surface: #0d0e10;
-            --surface-soft: #030405;
-            --primary-soft: #1b1d20;
-            --border: rgba(255, 255, 255, 0.14);
-            --shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
-        }
-
         .container {
             width: 90%;
             max-width: 1140px;
@@ -143,7 +130,6 @@
             gap: 10px;
         }
 
-        .theme-toggle,
         .menu-toggle {
             display: inline-flex;
             align-items: center;
@@ -159,7 +145,6 @@
             transition: background 0.3s, color 0.3s, transform 0.3s;
         }
 
-        .theme-toggle:hover,
         .menu-toggle:hover {
             transform: translateY(-2px);
             background: var(--primary-soft);
@@ -862,7 +847,6 @@
                 </ul>
             </nav>
             <div class="nav-actions">
-                <button class="theme-toggle" type="button" id="themeToggle" aria-label="Enable dark mode" aria-pressed="false">🌙</button>
                 <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
             </div>
         </div>
@@ -1017,10 +1001,8 @@
     </a>
 
     <script>
-        const body = document.body;
         const navLinks = document.querySelector('.nav-links');
         const menuToggle = document.querySelector('#menuToggle');
-        const themeToggle = document.querySelector('#themeToggle');
         const searchForm = document.querySelector('#searchForm');
         const productSearch = document.querySelector('#productSearch');
         const productCards = document.querySelectorAll('.product-card');
@@ -1030,25 +1012,9 @@
         const heroDots = document.querySelectorAll('.hero-dot');
         const previousHeroButton = document.querySelector('.hero-arrow.previous');
         const nextHeroButton = document.querySelector('.hero-arrow.next');
-        const savedTheme = localStorage.getItem('dental-store-theme');
         let activeFilter = 'all';
         let activeHeroSlide = 0;
         let heroTimer;
-
-        function setTheme(isDark) {
-            body.classList.toggle('dark-mode', isDark);
-            themeToggle.textContent = isDark ? '☀️' : '🌙';
-            themeToggle.setAttribute('aria-label', isDark ? 'Enable light mode' : 'Enable dark mode');
-            themeToggle.setAttribute('aria-pressed', String(isDark));
-        }
-
-        setTheme(savedTheme === 'dark');
-
-        themeToggle.addEventListener('click', function() {
-            const isDark = !body.classList.contains('dark-mode');
-            setTheme(isDark);
-            localStorage.setItem('dental-store-theme', isDark ? 'dark' : 'light');
-        });
 
         menuToggle.addEventListener('click', function() {
             const isOpen = navLinks.classList.toggle('active');
