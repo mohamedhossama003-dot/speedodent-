@@ -19,3 +19,13 @@ desktop.ini
 # Local env / secrets
 .env
 .env.local
+
+# headless-browser audit scratch files (never commit these)
+__audit*.js
+__audit*.html
+__b-*.txt
+__js*.txt
+__w*.txt
+__index-backup.html
+dom-*.html
+dom-*.err
