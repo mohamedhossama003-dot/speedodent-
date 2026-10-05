@@ -19,7 +19,7 @@ const navLinks = document.querySelector('.nav-links');
            ============================================================ */
         const SOCIAL_LINKS = [
             { id: 'facebook',  name: 'Facebook',  handle: '@your-page',   url: 'https://facebook.com/your-page' },
-            { id: 'instagram', name: 'Instagram', handle: '@your-handle',  url: 'https://instagram.com/your-handle' },
+            { id: 'instagram', name: 'Instagram', handle: '@speedodent',  url: 'https://www.instagram.com/speedodent' },
             { id: 'telegram',  name: 'Telegram',  handle: '@yourchannel',  url: 'https://t.me/yourchannel' },
             { id: 'snapchat',  name: 'Snapchat',  handle: '@yourhandle',  url: 'https://snapchat.com/add/yourhandle' },
             { id: 'tiktok',    name: 'TikTok',    handle: '@yourhandle',  url: 'https://tiktok.com/@yourhandle' }
