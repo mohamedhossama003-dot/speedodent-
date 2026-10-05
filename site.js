@@ -18,7 +18,7 @@ const navLinks = document.querySelector('.nav-links');
            dashed border so you can spot what is not filled in yet.
            ============================================================ */
         const SOCIAL_LINKS = [
-            { id: 'facebook',  name: 'Facebook',  handle: '@your-page',   url: 'https://facebook.com/your-page' },
+            { id: 'facebook',  name: 'Facebook',  handle: '@speedodent',  url: 'https://www.facebook.com/share/1BscALm5SG/' },
             { id: 'instagram', name: 'Instagram', handle: '@speedodent',  url: 'https://www.instagram.com/speedodent' },
             { id: 'telegram',  name: 'Telegram',  handle: '@yourchannel',  url: 'https://t.me/yourchannel' },
             { id: 'snapchat',  name: 'Snapchat',  handle: '@yourhandle',  url: 'https://snapchat.com/add/yourhandle' },
