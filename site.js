@@ -133,6 +133,68 @@ menuToggle.addEventListener('click', function() {
             menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
         });
 
+/* ============================================================
+   STORE DETAILS  -  read from store-config.js
+   One source of truth: the phone, WhatsApp number, address,
+   email and hours live in window.CONFIG.STORE.
+   ============================================================ */
+const STORE = (window.CONFIG && window.CONFIG.STORE) || {};
+
+function storeWaLink(topic) {
+    const digits = String(STORE.whatsapp || '').replace(/\D/g, '');
+    if (!digits) return '';
+    const msg = topic
+        ? 'Hello, I would like to ask about ' + topic + '. How much is it?'
+        : 'Hello, I would like to ask about your products.';
+    return 'https://wa.me/' + digits + '?text=' + encodeURIComponent(msg);
+}
+
+function renderContact() {
+    const host = document.getElementById('contactCard');
+    if (!host) return;
+
+    const rows = [
+        { icon: '📞', key: 'Phone', value: STORE.phone, href: STORE.phone ? 'tel:' + String(STORE.phone).replace(/\s+/g, '') : '' },
+        { icon: '💬', key: 'WhatsApp', value: STORE.phone, href: storeWaLink() },
+        { icon: '📍', key: 'Location', value: STORE.location },
+        { icon: '✉️', key: 'Email', value: STORE.email, href: STORE.email ? 'mailto:' + STORE.email : '' },
+        { icon: '🕐', key: 'Hours', value: STORE.hours },
+        { icon: '🚚', key: 'Shipping', value: STORE.shipping }
+    ].filter(function (row) { return !!row.value; });
+
+    host.innerHTML =
+        '<div class="contact-details">' +
+            rows.map(function (row) {
+                return '<div class="contact-row">' +
+                         '<span class="contact-ico" aria-hidden="true">' + row.icon + '</span>' +
+                         '<span class="k">' + row.key + '</span>' +
+                         '<span class="v">' +
+                           (row.href
+                             ? '<a href="' + row.href + '" target="_blank" rel="noopener noreferrer">' + row.value + '</a>'
+                             : row.value) +
+                         '</span>' +
+                       '</div>';
+            }).join('') +
+        '</div>' +
+        '<div class="contact-cta">' +
+            '<p class="cta-lead">Fastest way to reach us is WhatsApp &mdash; send us what you need and we will answer with price and availability.</p>' +
+            (storeWaLink() ? '<a class="cta-btn cta-wa" href="' + storeWaLink() + '" target="_blank" rel="noopener noreferrer">' +
+                          '<svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.8L.5 31.5l7.9-2c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.9 28.9 16 23.1 28.8 16 28.8zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.3-.1-.6-.2-.8.2s-.9 1.3-1.1 1.5c-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8.2-.2.3-.4.6-.7.2-.2.3-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z"/></svg>' +
+                          'Chat on WhatsApp</a>' : '') +
+            (STORE.phone ? '<a class="cta-btn cta-outline" href="tel:' + String(STORE.phone).replace(/\s+/g, '') + '">📞 Call us</a>' : '') +
+            '<a class="cta-btn cta-outline" href="index.html#products">Browse Products →</a>' +
+        '</div>';
+}
+
+/* keep the floating button in step with CONFIG.STORE.whatsapp */
+function syncWhatsAppButton() {
+    const btn = document.getElementById('waFloat');
+    if (btn && storeWaLink()) btn.setAttribute('href', storeWaLink());
+}
+
+renderContact();
+syncWhatsAppButton();
+
 renderPaymentMethods();
         renderSocialLinks();
 
