@@ -693,6 +693,111 @@
             }
         }
 
+        /* ===== OMNICHROMA description (inside the Restorative card) ===== */
+        .omni {
+            margin-top: 30px;
+            padding-top: 26px;
+            border-top: 1px solid var(--border);
+            text-align: start;
+        }
+
+        .omni-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 14px;
+        }
+
+        .omni p {
+            font-size: 0.95rem;
+            line-height: 1.85;
+            color: var(--muted);
+            margin-bottom: 14px;
+            text-align: start;
+        }
+
+        .omni-cols {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px 30px;
+            margin-top: 22px;
+        }
+
+        .omni h5 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--silver);
+            margin-bottom: 13px;
+        }
+
+        .chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .chip {
+            padding: 7px 14px;
+            border-radius: 999px;
+            background: var(--primary-soft);
+            border: 1px solid rgba(199, 203, 209, 0.22);
+            color: var(--silver);
+            font-size: 0.78rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .omni-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 9px;
+        }
+
+        .omni-list li {
+            position: relative;
+            padding-inline-start: 18px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        .omni-list li::before {
+            content: '';
+            position: absolute;
+            inset-inline-start: 0;
+            top: 0.55em;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--silver);
+            opacity: 0.5;
+        }
+
+        .omni-fill {
+            margin-top: 22px;
+            padding: 17px 19px;
+            background: var(--primary-soft);
+            border: 1px solid rgba(199, 203, 209, 0.14);
+            border-radius: 14px;
+        }
+
+        .omni-fill p {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .omni-cols {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .omni-title {
+                font-size: 1.14rem;
+            }
+        }
+
         /* ===== About ===== */
         .about {
             padding: 90px 0;

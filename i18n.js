@@ -117,6 +117,24 @@
         'p.hygiene.t':     'Hygiene & Prevention',
         'p.hygiene.d':     'Sterilization systems, X-ray units, turbines, lasers, cameras, ultrasonic scalers, anesthesia and preventive care.',
         'p.rest.img':      'Composite restorative product',
+
+        /* --- OMNICHROMA (inside the Restorative card) --- */
+        'omni.title':      'Every Shade, One Choice',
+        'omni.p1':         "OMNICHROMA is the world's first universal composite that esthetically matches every patient, from A1 to D4, with a single shade. Its uniformly sized supra-nano spherical fillers (260nm spherical SiO2-ZrO2) allow OMNICHROMA to match every one of the 16 VITA classical shades, a science that we call Smart Chromatic Technology.",
+        'omni.p2':         'Its wide color-matching ability eliminates the shade-taking procedure, reducing composite inventory and saving doctors time and money.',
+        'omni.use':        'Universal Use',
+        'omni.c1':         'Every shade',
+        'omni.c2':         'Every class',
+        'omni.c3':         'Stunning Esthetics',
+        'omni.match':      'Unprecedented color matching',
+        'omni.m1':         'Shade matches both before and after bleaching',
+        'omni.m2':         'High polishability',
+        'omni.ph':         'Excellent Physical-Mechanical Properties',
+        'omni.f1':         'Highest wear resistance',
+        'omni.f2':         'High compressive strength',
+        'omni.f3':         'Exceptional handling',
+        'omni.fill':       'OMNICHROMA Fillers & Structural Color',
+        'omni.p3':         "OMNICHROMA exhibits the ultimate wide-range color-matching ability, covering all VITA classical shades with just one shade of composite, thanks to Tokuyama's Smart Chromatic Technology.",
     };
 
     /* ============================================================
@@ -216,6 +234,24 @@
         'p.hygiene.t':     'النظافة والوقاية',
         'p.hygiene.d':     'أنظمة تعقيم وأجهزة أشعة وتوربينات وليزر وكاميرات وجرافات فوق صوتية وتخدير ورعاية وقائية.',
         'p.rest.img':      'منتج كمبوزيت ترميمي',
+
+        /* --- OMNICHROMA (داخل كرت الترميم) --- */
+        'omni.title':      'كل درجة لون، اختيار واحد',
+        'omni.p1':         'OMNICHROMA هو أول كومبوزيت عام في العالم يطابق تجميليًا كل مريض من A1 إلى D4 بدرجة لون واحدة فقط. حبيباته الكروية فائقة الدقة متساوية الحجم (SiO2-ZrO2 كروي بحجم 260 نانومتر) تتيح له مطابقة جميع درجات VITA الكلاسيكية الـ 16، وهي التقنية التي نسميها "تقنية اللون الذكية".',
+        'omni.p2':         'قدرته الواسعة على مطابقة الألوان تلغي ضرورة تحديد درجة اللون، مما يقلل مخزون الدرجات ويوفر على الطبيب وقتًا ومالًا.',
+        'omni.use':        'استخدام شامل',
+        'omni.c1':         'كل درجة',
+        'omni.c2':         'كل حالة',
+        'omni.c3':         'جماليات رائعة',
+        'omni.match':      'مطابقة لون غير مسبوقة',
+        'omni.m1':         'مطابقة اللون قبل وبعد التبييض',
+        'omni.m2':         'قابلية صقل عالية',
+        'omni.ph':         'خواص فيزيائية وميكانيكية ممتازة',
+        'omni.f1':         'أعلى مقاومة للتآكل',
+        'omni.f2':         'مقاومة ضغط عالية',
+        'omni.f3':         'تعامل استثنائي',
+        'omni.fill':       'حبيبات OMNICHROMA واللون الهيكلي',
+        'omni.p3':         'يتميز OMNICHROMA بأقصى قدرة على مطابقة الألوان على نطاق واسع، حيث يغطي جميع درجات VITA الكلاسيكية بدرجة لون واحدة فقط من الكومبوزيت، بفضل تقنية اللون الذكية من Tokuyama.',
     };
 
     /* ============================================================
