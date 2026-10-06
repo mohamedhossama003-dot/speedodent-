@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <script>try{var L=localStorage.getItem("sd_lang");if(L==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl";}}catch(e){}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info | Speedo Dent - About, Ways to Pay & Contact</title>
     <meta name="description" content="About Speedo Dent dental supplies in Alexandria: who we are, how you can pay (InstaPay, Vodafone Cash, PayPal, Visa, Cash), how to contact us and where to follow us.">
@@ -34,6 +35,9 @@
     <meta name="twitter:title" content="Info | Speedo Dent - About, Ways to Pay & Contact">
     <meta name="twitter:description" content="About Speedo Dent dental supplies in Alexandria: who we are, how you can pay (InstaPay, Vodafone Cash, PayPal, Visa, Cash), how to contact us and where to follow us.">
     <meta name="twitter:image" content="https://mohamedhossama003-dot.github.io/speedodent-/og-image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="chat-widget.css">
 </head>
@@ -42,19 +46,20 @@
     <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-content">
-            <a class="logo" href="index.html#home" aria-label="Speedo Dent - home">
+            <a class="logo" href="index.html#home" aria-label="Speedo Dent - home" data-i18n-attr="aria-label:aria.home">
                 <span class="logo-badge"><img src="logo-mark-96.png" alt="" width="32" height="32"></span>
                 <span>Speedo Dent</span>
             </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#products">Products</a></li>
-                    <li><a href="#info">Info</a></li>
+                    <li><a href="index.html#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="index.html#products" data-i18n="nav.products">Products</a></li>
+                    <li><a href="#info" data-i18n="nav.info">Info</a></li>
                 </ul>
             </nav>
             <div class="nav-actions">
-                <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+                <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en" class="on" aria-pressed="true">EN</button><button type="button" data-lang="ar" aria-pressed="false">ع</button></div>
+                <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" data-i18n-attr="aria-label:nav.menu.open">☰</button>
             </div>
         </div>
     </header>
@@ -63,14 +68,14 @@
     <!-- Page banner -->
     <section id="info" class="page-head">
         <div class="container">
-            <span class="crumb">Speedo Dent</span>
-            <h1>Information</h1>
-            <p class="page-lead">Everything about the store in one place &mdash; who we are, how you can pay, how to reach us and where to follow us.</p>
-            <nav class="page-jump" aria-label="Jump to a section">
-                <a href="#contact">Contact Us</a>
-                <a href="#about">About Us</a>
-                <a href="#payment">Ways to Pay</a>
-                <a href="#social">Follow Us</a>
+            <span class="crumb" data-i18n="info.crumb">Speedo Dent</span>
+            <h1 data-i18n="info.title">Information</h1>
+            <p class="page-lead" data-i18n="info.lead">Everything about the store in one place &mdash; who we are, how you can pay, how to reach us and where to follow us.</p>
+            <nav class="page-jump" aria-label="Jump to a section" data-i18n-attr="aria-label:info.jump">
+                <a href="#contact" data-i18n="s.contact">Contact Us</a>
+                <a href="#about" data-i18n="s.about">About Us</a>
+                <a href="#payment" data-i18n="s.payment">Ways to Pay</a>
+                <a href="#social" data-i18n="s.social">Follow Us</a>
             </nav>
         </div>
     </section>
@@ -78,7 +83,7 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title" data-i18n="s.contact">Contact Us</h2>
             <div class="contact-card" id="contactCard"></div>
         </div>
     </section>
@@ -86,9 +91,9 @@
 <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Us</h2>
+            <h2 class="section-title" data-i18n="s.about">About Us</h2>
             <div class="about-box">
-                <p>We specialize in premium dental products that meet the highest international quality standards. For more than 10 years, we have served dentists and clinics across Egypt with reliable service and responsive order support.</p>
+                <p data-i18n="about.text">We specialize in premium dental products that meet the highest international quality standards. For more than 10 years, we have served dentists and clinics across Egypt with reliable service and responsive order support.</p>
             </div>
         </div>
     </section>
@@ -96,8 +101,8 @@
     <!-- Payment -->
     <section id="payment" class="payment">
         <div class="container">
-            <h2 class="section-title">Ways to Pay</h2>
-            <p class="payment-lead">Pick whatever is easiest for you &mdash; send the payment confirmation on WhatsApp and we will process your order right away.</p>
+            <h2 class="section-title" data-i18n="s.payment">Ways to Pay</h2>
+            <p class="payment-lead" data-i18n="payment.lead">Pick whatever is easiest for you &mdash; send the payment confirmation on WhatsApp and we will process your order right away.</p>
             <div class="payment-grid" id="paymentGrid"></div>
         </div>
     </section>
@@ -105,8 +110,8 @@
     <!-- Social -->
     <section id="social" class="social">
         <div class="container">
-            <h2 class="section-title">Follow Us</h2>
-            <p class="social-lead">Reach us on whichever channel you use most &mdash; we usually reply within a few hours.</p>
+            <h2 class="section-title" data-i18n="s.social">Follow Us</h2>
+            <p class="social-lead" data-i18n="social.lead">Reach us on whichever channel you use most &mdash; we usually reply within a few hours.</p>
             <div class="social-grid" id="socialGrid"></div>
         </div>
     </section>
@@ -115,13 +120,13 @@
     <footer>
         <div class="pay-foot" id="payFoot"></div>
         <div class="social-foot" id="socialFoot"></div>
-        <p>© 2025 Speedo Dent - All rights reserved</p>
+        <p data-i18n="footer.rights">© 2025 Speedo Dent - All rights reserved</p>
     </footer>
 
 
     <!-- Floating WhatsApp button -->
     <a href="https://wa.me/201040931823" id="waFloat"
-       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" data-i18n-attr="aria-label:aria.wa">
         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.8L.5 31.5l7.9-2c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.9 28.9 16 23.1 28.8 16 28.8zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.3-.1-.6-.2-.8.2s-.9 1.3-1.1 1.5c-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z"/>
         </svg>
@@ -137,6 +142,7 @@
          chat-widget.js  : injects its own markup, then the chat logic
          ============================================================ -->
     <script src="store-config.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="site.js" defer></script>
     <script src="chat-widget.js" defer></script>
 

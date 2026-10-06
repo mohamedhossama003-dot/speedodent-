@@ -1475,3 +1475,115 @@
     color: #fff;
     border-color: rgba(199, 203, 209, 0.4);
 }
+
+/* ===== Language switch (EN / ع) ===== */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 3px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+}
+
+.lang-switch button {
+    min-width: 34px;
+    height: 34px;
+    padding: 0 9px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.lang-switch button.on {
+    background: var(--silver);
+    color: #050505;
+}
+
+.lang-switch button:not(.on):hover {
+    background: var(--primary-soft);
+    color: var(--dark);
+}
+
+/* ===== Arabic (RTL) ===== */
+html[lang="ar"] body {
+    font-family: 'Cairo', 'Segoe UI', Arial, Tahoma, sans-serif;
+}
+
+html[dir="rtl"] .nav-links a::after {
+    right: auto;
+    left: 0;
+}
+
+html[dir="rtl"] .search-form input {
+    padding: 0 58px 0 22px;
+}
+
+html[dir="rtl"] .search-form button {
+    left: auto;
+    right: 6px;
+}
+
+html[dir="rtl"] .cat-l2 {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+html[dir="rtl"] .cat-all,
+html[dir="rtl"] .cat-btn {
+    text-align: right;
+}
+
+html[dir="rtl"] .cat-l3 {
+    padding-left: 0;
+    padding-right: 42px;
+}
+
+html[dir="rtl"] .cat-dot {
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+html[dir="rtl"] .cat-btn.active {
+    box-shadow: inset -2px 0 0 var(--silver);
+}
+
+html[dir="rtl"] .cat-chev {
+    transform: scaleX(-1);
+}
+
+html[dir="rtl"] .cat-l2[aria-expanded="true"] .cat-chev,
+html[dir="rtl"] .cat-l1[aria-expanded="true"] .cat-chev {
+    transform: rotate(90deg);
+}
+
+html[dir="rtl"] .hero-arrow.previous {
+    left: auto;
+    right: 24px;
+}
+
+html[dir="rtl"] .hero-arrow.next {
+    right: auto;
+    left: 24px;
+}
+
+@media (max-width: 768px) {
+    html[dir="rtl"] .hero-arrow.previous {
+        left: auto;
+        right: 12px;
+    }
+
+    html[dir="rtl"] .hero-arrow.next {
+        right: auto;
+        left: 12px;
+    }
+}

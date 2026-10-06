@@ -3,6 +3,16 @@
    Navigation, "Ways to Pay" and "Follow Us".
    ============================================================ */
 
+/* i18n.js normally defines this; the fallback keeps the page working
+   if it is ever loaded on its own. */
+window.SD = window.SD || {
+    lang: 'en',
+    t: function (k) { return k; },
+    tr: function (s) { return s; },
+    ar: function (s) { return s; },
+    onLangChange: null
+};
+
 const navLinks = document.querySelector('.nav-links');
         const menuToggle = document.querySelector('#menuToggle');
 
@@ -65,24 +75,29 @@ const navLinks = document.querySelector('.nav-links');
             const foot = document.getElementById('payFoot');
             if (!grid && !foot) return;   /* a page may have only one of the two */
 
+            /* rebuilt on every language switch, so start from empty */
+            if (grid) grid.innerHTML = '';
+            if (foot) foot.innerHTML = '';
+
             PAYMENT_METHODS.forEach(function (method) {
                 if (!PAYMENT_ICONS[method.id]) return;
 
                 const svg = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
                             PAYMENT_ICONS[method.id] + '</svg>';
+                const note = SD.t('p.' + method.id) || method.note;
 
                 const card = document.createElement('div');
                 card.className = 'pay-card';
                 card.innerHTML =
                     '<span class="pay-ico p-' + method.id + '">' + svg + '</span>' +
                     '<span class="pay-name">' + method.name + '</span>' +
-                    '<span class="pay-note">' + method.note + '</span>';
+                    '<span class="pay-note">' + note + '</span>';
                 if (grid) grid.appendChild(card);
 
                 const link = document.createElement('div');
                 link.className = 'pay-foot-link p-' + method.id;
                 link.setAttribute('role', 'img');
-                link.setAttribute('aria-label', method.name + ' accepted');
+                link.setAttribute('aria-label', SD.t('p.accepted').replace('{n}', method.name));
                 link.innerHTML = svg + '<span>' + method.name + '</span>';
                 if (foot) foot.appendChild(link);
             });
@@ -93,12 +108,16 @@ const navLinks = document.querySelector('.nav-links');
             const foot = document.getElementById('socialFoot');
             if (!grid && !foot) return;   /* a page may have only one of the two */
 
+            /* rebuilt on every language switch, so start from empty */
+            if (grid) grid.innerHTML = '';
+            if (foot) foot.innerHTML = '';
+
             SOCIAL_LINKS.forEach(function (social) {
                 if (!social.url || !SOCIAL_ICONS[social.id]) return;
 
                 // a url the owner has not replaced yet -> dashed border
                 const empty = /your[-_]?(page|handle|channel)/i.test(social.url);
-                const label = social.name + (empty ? ' (link not set yet)' : '');
+                const label = social.name + (empty ? SD.t('s.notSet') : '');
                 const svg = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
                             SOCIAL_ICONS[social.id] + '</svg>';
 
@@ -130,7 +149,7 @@ const navLinks = document.querySelector('.nav-links');
 menuToggle.addEventListener('click', function() {
             const isOpen = navLinks.classList.toggle('active');
             menuToggle.setAttribute('aria-expanded', String(isOpen));
-            menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+            menuToggle.setAttribute('aria-label', isOpen ? SD.t('nav.menu.close') : SD.t('nav.menu.open'));
         });
 
 /* ============================================================
@@ -154,12 +173,12 @@ function renderContact() {
     if (!host) return;
 
     const rows = [
-        { icon: '📞', key: 'Phone', value: STORE.phone, href: STORE.phone ? 'tel:' + String(STORE.phone).replace(/\s+/g, '') : '' },
-        { icon: '💬', key: 'WhatsApp', value: STORE.phone, href: storeWaLink() },
-        { icon: '📍', key: 'Location', value: STORE.location },
-        { icon: '✉️', key: 'Email', value: STORE.email, href: STORE.email ? 'mailto:' + STORE.email : '' },
-        { icon: '🕐', key: 'Hours', value: STORE.hours },
-        { icon: '🚚', key: 'Shipping', value: STORE.shipping }
+        { icon: '📞', key: SD.t('c.phone'), value: STORE.phone, href: STORE.phone ? 'tel:' + String(STORE.phone).replace(/\s+/g, '') : '' },
+        { icon: '💬', key: SD.t('c.whatsapp'), value: STORE.phone, href: storeWaLink() },
+        { icon: '📍', key: SD.t('c.location'), value: STORE.location },
+        { icon: '✉️', key: SD.t('c.email'), value: STORE.email, href: STORE.email ? 'mailto:' + STORE.email : '' },
+        { icon: '🕐', key: SD.t('c.hours'), value: STORE.hours },
+        { icon: '🚚', key: SD.t('c.shipping'), value: STORE.shipping }
     ].filter(function (row) { return !!row.value; });
 
     host.innerHTML =
@@ -177,12 +196,12 @@ function renderContact() {
             }).join('') +
         '</div>' +
         '<div class="contact-cta">' +
-            '<p class="cta-lead">Fastest way to reach us is WhatsApp &mdash; send us what you need and we will answer with price and availability.</p>' +
+            '<p class="cta-lead">' + SD.t('c.lead') + '</p>' +
             (storeWaLink() ? '<a class="cta-btn cta-wa" href="' + storeWaLink() + '" target="_blank" rel="noopener noreferrer">' +
                           '<svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.8L.5 31.5l7.9-2c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.9 28.9 16 23.1 28.8 16 28.8zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.3-.1-.6-.2-.8.2s-.9 1.3-1.1 1.5c-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8.2-.2.3-.4.6-.7.2-.2.3-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z"/></svg>' +
-                          'Chat on WhatsApp</a>' : '') +
-            (STORE.phone ? '<a class="cta-btn cta-outline" href="tel:' + String(STORE.phone).replace(/\s+/g, '') + '">📞 Call us</a>' : '') +
-            '<a class="cta-btn cta-outline" href="index.html#products">Browse Products →</a>' +
+                          SD.t('c.chat') + '</a>' : '') +
+            (STORE.phone ? '<a class="cta-btn cta-outline" href="tel:' + String(STORE.phone).replace(/\s+/g, '') + '">' + SD.t('c.call') + '</a>' : '') +
+            '<a class="cta-btn cta-outline" href="index.html#products">' + SD.t('c.browse') + '</a>' +
         '</div>';
 }
 
@@ -207,7 +226,7 @@ renderPaymentMethods();
                     target.scrollIntoView({ behavior: 'smooth' });
                     document.querySelector('.nav-links').classList.remove('active');
                     menuToggle.setAttribute('aria-expanded', 'false');
-                    menuToggle.setAttribute('aria-label', 'Open menu');
+                    menuToggle.setAttribute('aria-label', SD.t('nav.menu.open'));
                 }
             });
         });

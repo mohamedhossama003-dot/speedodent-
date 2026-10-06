@@ -23,7 +23,12 @@ const searchForm = document.querySelector('#searchForm');
             if (!query) return true;
             if (text.indexOf(query) !== -1) return true;
             var words = query.split(/[^a-z0-9]+/).filter(Boolean);
-            if (!words.length) return true;
+            if (!words.length) {
+                /* Arabic (or any non-Latin) query: the stemmer can do
+                   nothing with it, so the substring test above is the
+                   whole answer. Latin-only punctuation still shows all. */
+                return !/[^\x00-\x7F]/.test(query);
+            }
             return words.every(function (word) {
                 var stem = word.length > 3 ? word.replace(/s$/, '') : word;
                 return text.indexOf(stem) !== -1 ||
@@ -222,74 +227,6 @@ const CATEGORY_TREE = [
   {
     name: 'Oral Hygiene', key: 'hygiene', icon: 'oral', groups: [{ name: 'Miscellaneous' }]
   },
-  {
-    name: 'Dental LAB', icon: 'lab', groups: [
-      {
-        name: 'CAD/CAM & 3D Printing', items: [
-          'Lab consumables', 'CAD CAM Materials', 'Wax', 'Ceramics & Zirconia', 'Cast Alloy'
-        ]
-      },
-      {
-        name: 'Instrument', items: [
-          'Gauge Tips', 'Calibers', 'Waxing Instrument', 'Articulators',
-          'Mixing Bowls', 'Knives & Carvers'
-        ]
-      },
-      { name: 'Consumables' },
-      { name: 'Equipment' }
-    ]
-  },
-  {
-    name: 'Dermatology', icon: 'derma', groups: [
-      {
-        name: 'Injectables', items: [
-          'Dermal Fillers', 'Botulinum Toxin (Botox)', 'Skin Boosters', 'Mesotherapy',
-          'PRP Kits', 'Peeling', 'Exosome'
-        ]
-      },
-      {
-        name: 'Skincare Products', items: [
-          'Serums', 'Moisturizers', 'Anti-aging Creams', 'Brightening / Whitening Products',
-          'Acne Treatments', 'Sunscreens', 'Cleansers'
-        ]
-      },
-      {
-        name: 'Aesthetic Devices & Tools', items: [
-          'Microneedling Pens / Derma Pens', 'RF Devices', 'LED Masks',
-          'IPL & Laser Devices', 'Skin Booster', 'Consumables'
-        ]
-      },
-      {
-        name: 'Hair Treatments', items: [
-          'Hair Mesotherapy', 'Hair Growth Serums', 'Scalp Treatments'
-        ]
-      },
-      {
-        name: 'Lip & Eye Care', items: [
-          'Lip Fillers', 'Eye Serums / Fillers', 'Dark Circle Treatments'
-        ]
-      },
-      {
-        name: 'Body Contouring', items: [
-          'Fat Dissolvers', 'Cellulite Treatments', 'Firming Creams'
-        ]
-      },
-      { name: 'Cosmotics', items: ['Cold Peel', 'Stem Cells', 'Exosome'] }
-    ]
-  },
-  {
-    name: 'Medical', icon: 'medical', groups: [
-      { name: 'Medical Supplies' },
-      {
-        name: 'Neuro', items: [
-          'Wires', 'Micro Guidewires', 'Catheters', 'Microcatheters',
-          'Stents', 'Flow Diverters'
-        ]
-      }
-    ]
-  },
-  {
-    name: 'Cleaning', icon: 'cleaning', groups: [{ name: 'Cleaning and Sanitization' }] }
 ];
 
 /* ---------- section -> product-card key ---------- */
@@ -382,7 +319,7 @@ const CATEGORY_ICONS = {
 
   let html =
     '<button type="button" class="cat-head" id="catHead" aria-expanded="false" aria-controls="catList">' +
-      '<span>Categories</span>' +
+      '<span data-i18n="cat.title">' + SD.t('cat.title') + '</span>' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
         'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
         '<path d="M6 9l6 6 6-6"/></svg>' +
@@ -391,7 +328,7 @@ const CATEGORY_ICONS = {
       '<span class="cat-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" ' +
         'stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' +
         '<path d="M4.6 5.4h14.8M4.6 12h14.8M4.6 18.6h14.8"/></svg></span>' +
-      '<span class="cat-label">All Categories</span>' +
+      '<span class="cat-label" data-i18n="cat.all">' + SD.t('cat.all') + '</span>' +
       '<span class="cat-num" data-role="count">0</span>' +
     '</button>' +
     '<div class="cat-list" id="catList">';
@@ -410,7 +347,7 @@ const CATEGORY_ICONS = {
           '<span class="cat-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" ' +
             'stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' +
             (CATEGORY_ICONS[cat.icon] || '') + '</svg></span>' +
-          '<span class="cat-label">' + esc(cat.name) + '</span>' +
+          '<span class="cat-label" data-i18n-cat="' + esc(cat.name) + '">' + esc(SD.tr(cat.name)) + '</span>' +
           '<span class="cat-num">' + count + '</span>' + chev +
         '</button>' +
         '<div class="cat-group" id="cg' + i + '">';
@@ -423,12 +360,12 @@ const CATEGORY_ICONS = {
         '<div class="cat-node">' +
           '<button type="button" class="cat-btn cat-l2' + (hasKids ? '' : ' cat-leaf') + '" ' +
                   'data-name="' + esc(cat.name) + '" data-key="' + esc(CATEGORY_KEYS[cat.name]) + '" ' +
-                  'data-term="' + esc(g.name) + '" data-level="2"' +
+                  'data-term="' + esc(g.name) + '" data-term-ar="' + esc(SD.ar(g.name)) + '" data-level="2"' +
                   (hasKids
                     ? ' aria-expanded="false" aria-controls="cg' + i + 'g' + gi + '"'
                     : '') + '>' +
             '<span class="cat-dot" aria-hidden="true"></span>' +
-            '<span class="cat-label">' + esc(g.name) + '</span>' +
+            '<span class="cat-label" data-i18n-cat="' + esc(g.name) + '">' + esc(SD.tr(g.name)) + '</span>' +
             '<span class="cat-num">' + (hasKids ? gitems.length : 1) + '</span>' +
             (hasKids ? chev : '') +
           '</button>';
@@ -439,8 +376,8 @@ const CATEGORY_ICONS = {
           html +=
             '<button type="button" class="cat-btn cat-l3" data-name="' + esc(cat.name) + '" ' +
                     'data-key="' + esc(CATEGORY_KEYS[cat.name]) + '" ' +
-                    'data-term="' + esc(label) + '" data-level="3">' +
-              '<span class="cat-label">' + esc(label) + '</span>' +
+                    'data-term="' + esc(label) + '" data-term-ar="' + esc(SD.ar(label)) + '" data-level="3">' +
+              '<span class="cat-label" data-i18n-cat="' + esc(label) + '">' + esc(SD.tr(label)) + '</span>' +
             '</button>';
         });
         html += '</div>';
@@ -463,6 +400,16 @@ const catHead = document.getElementById('catHead');
 const catList = document.getElementById('catList');
 const catAllBtn = catSidebar ? catSidebar.querySelector('.cat-all') : null;
 const catBtns = catSidebar ? catSidebar.querySelectorAll('.cat-btn') : [];
+
+/* The term a row filters on. data-term stays English (that is what the
+   card keywords are written in); in Arabic the row shows and fills the
+   search box with its own Arabic label instead. */
+function activeTerm(btn) {
+  if (!btn) return '';
+  if (btn.dataset.level === '1') return '';
+  if (window.SD && SD.lang === 'ar' && btn.dataset.termAr) return btn.dataset.termAr;
+  return btn.dataset.term || '';
+}
 
 function catSetActive(btn) {
   catBtns.forEach(function (b) { b.classList.remove('active'); });
@@ -559,7 +506,7 @@ catBtns.forEach(function (btn) {
 
     activeFilter = btn.dataset.key || 'all';
     categoryPicked = true;
-    productSearch.value = btn.dataset.term || '';
+    productSearch.value = activeTerm(btn);
     catSetActive(btn);
     catReveal(btn);
     filterProducts();
@@ -571,7 +518,7 @@ function syncCategoryUI() {
   if (!catSidebar) return;
 
   const match = [].slice.call(catBtns).filter(function (b) {
-    return b.dataset.key === activeFilter && (b.dataset.term || '') === productSearch.value;
+    return b.dataset.key === activeFilter && activeTerm(b) === productSearch.value;
   })[0];
   catSetActive(match || null);
   catReveal(match);
@@ -587,6 +534,28 @@ function syncCategoryUI() {
 }
 
 syncCategoryUI();
+
+/* ============================================================
+   LANGUAGE SWITCH  -  the sidebar is built once, so relabel it
+   in place instead of rebuilding the whole accordion.
+   ============================================================ */
+function syncCatLabels() {
+  document.querySelectorAll('[data-i18n-cat]').forEach(function (el) {
+    el.textContent = SD.tr(el.getAttribute('data-i18n-cat'));
+  });
+}
+
+if (window.SD) {
+  window.SD.onLangChange = function () {
+    syncCatLabels();
+    /* the active row's search term just changed language, so refill the
+       box from it before re-filtering; a typed query is left alone */
+    const act = document.querySelector('.cat-btn.active');
+    if (act) productSearch.value = activeTerm(act);
+    filterProducts();
+  };
+  syncCatLabels();   /* in case the page booted straight into Arabic */
+}
 
 function showHeroSlide(index) {
             activeHeroSlide = (index + heroSlides.length) % heroSlides.length;
