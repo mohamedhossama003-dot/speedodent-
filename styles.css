@@ -660,6 +660,39 @@
             border-radius: 50px;
         }
 
+        /* ===== Featured photo card (Restorative) ===== */
+        .product-card.has-photo {
+            grid-column: 1 / -1;
+        }
+
+        .card-split {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .card-photo {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            border: 1px solid rgba(199, 203, 209, 0.18);
+            background: var(--primary-soft);
+            box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+        }
+
+        .card-body {
+            min-width: 0;
+        }
+
+        @media (max-width: 768px) {
+            .card-split {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+        }
+
         /* ===== About ===== */
         .about {
             padding: 90px 0;

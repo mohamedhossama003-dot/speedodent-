@@ -116,6 +116,7 @@
         'p.perio.d':       'Scalpels and blades, sutures, haemostatic agents, perio packs, extraction forceps, elevators and surgical burs.',
         'p.hygiene.t':     'Hygiene & Prevention',
         'p.hygiene.d':     'Sterilization systems, X-ray units, turbines, lasers, cameras, ultrasonic scalers, anesthesia and preventive care.',
+        'p.rest.img':      'Composite restorative product',
     };
 
     /* ============================================================
@@ -214,6 +215,7 @@
         'p.perio.d':       'سكاكين وشفرات وغرز وموانع نزيف وضمادات لثوية وكماشات خلع ورافعات وبورات جراحية.',
         'p.hygiene.t':     'النظافة والوقاية',
         'p.hygiene.d':     'أنظمة تعقيم وأجهزة أشعة وتوربينات وليزر وكاميرات وجرافات فوق صوتية وتخدير ورعاية وقائية.',
+        'p.rest.img':      'منتج كمبوزيت ترميمي',
     };
 
     /* ============================================================
