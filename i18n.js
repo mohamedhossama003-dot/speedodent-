@@ -116,26 +116,6 @@
         'p.perio.d':       'Scalpels and blades, sutures, haemostatic agents, perio packs, extraction forceps, elevators and surgical burs.',
         'p.hygiene.t':     'Hygiene & Prevention',
         'p.hygiene.d':     'Sterilization systems, X-ray units, turbines, lasers, cameras, ultrasonic scalers, anesthesia and preventive care.',
-
-        /* featured product shown inside the Restorative card */
-        'p.rest.h':        'Premium Restorative Composite',
-        'p.rest.b1':       'High Radiopacity',
-        'p.rest.b2':       'Low Shrinkage',
-        'p.rest.b3':       'Natural Esthetics',
-        'p.rest.l1':       'Ideal for anterior & posterior restorations',
-        'p.rest.l2':       'Class I–V cavities & core build-ups',
-        'p.rest.l3':       'Non-sticky, easy to sculpt',
-        'p.rest.l4':       'High surface luster & color stability',
-        'p.rest.s1k':      'Brand:',
-        'p.rest.s1v':      'VOCO',
-        'p.rest.s2k':      'Type:',
-        'p.rest.s2v':      'Fine Hybrid Composite',
-        'p.rest.s3k':      'Curing:',
-        'p.rest.s3v':      'Light-Cured',
-        'p.rest.s4k':      'Weight:',
-        'p.rest.s4v':      '4g Syringe',
-        'p.rest.s5k':      'Origin:',
-        'p.rest.s5v':      'Germany',
     };
 
     /* ============================================================
@@ -234,26 +214,6 @@
         'p.perio.d':       'سكاكين وشفرات وغرز وموانع نزيف وضمادات لثوية وكماشات خلع ورافعات وبورات جراحية.',
         'p.hygiene.t':     'النظافة والوقاية',
         'p.hygiene.d':     'أنظمة تعقيم وأجهزة أشعة وتوربينات وليزر وكاميرات وجرافات فوق صوتية وتخدير ورعاية وقائية.',
-
-        /* featured product shown inside the Restorative card */
-        'p.rest.h':        'الكمبوزيت الترميمي الفاخر',
-        'p.rest.b1':       'شفافية عالية',
-        'p.rest.b2':       'انكماش منخفض',
-        'p.rest.b3':       'جماليات طبيعية',
-        'p.rest.l1':       'مثالي للحشوات الأمامية والخلفية',
-        'p.rest.l2':       'تجويف من الدرجة I–V وبناء التيجان المؤقت',
-        'p.rest.l3':       'غير لزج وسهل التنعيم',
-        'p.rest.l4':       'لمعان سطحي عالٍ وثبات لوني',
-        'p.rest.s1k':      'الماركة:',
-        'p.rest.s1v':      'VOCO',
-        'p.rest.s2k':      'النوع:',
-        'p.rest.s2v':      'كومبوزيت هجين ناعم',
-        'p.rest.s3k':      'التثبيت:',
-        'p.rest.s3v':      'بالضوء',
-        'p.rest.s4k':      'الوزن:',
-        'p.rest.s4v':      'سرنجة 4 جرام',
-        'p.rest.s5k':      'المنشأ:',
-        'p.rest.s5v':      'ألمانيا',
     };
 
     /* ============================================================
