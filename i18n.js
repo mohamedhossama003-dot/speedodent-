@@ -136,6 +136,16 @@
         'omni.f3':         'Exceptional handling',
         'omni.fill':       'OMNICHROMA Fillers & Structural Color',
         'omni.p3':         "OMNICHROMA exhibits the ultimate wide-range color-matching ability, covering all VITA classical shades with just one shade of composite, thanks to Tokuyama's Smart Chromatic Technology.",
+
+        /* --- Tetric N-Ceram Bulk Fill (inside the Restorative card) --- */
+        'tet.title':       'Tetric N-Ceram Bulk Fill',
+        'tet.p1':          'Tetric N-Ceram Bulk Fill is the efficient four-millimetres posterior composite of the nano-optimized Tetric N-Collection.',
+        'tet.p2':          'Tetric N-Ceram Bulk Fill enables posterior teeth to be restored with only one layer measuring up to four-millimetres in thickness, which considerably heightens efficiency.',
+        'tet.p3':          "The patented light activator Ivocerin is responsible for ensuring the complete cure of the filling. Compared with conventional light initiators, the Ivocerin polymerisation booster is much more reactive. Therefore, polymerisation is initiated even in very deep cavities and the material is fully cured.",
+        'tet.p4':          'A specially conditioned shrinkage stress reliever keeps shrinkage and shrinkage stress during polymerisation to a minimum.',
+        'tet.p5':          'Tetric N-Ceram Bulk Fill is available in three universal shades: IVA, IVB and IVW (universal A shade, universal B shade and for deciduous teeth or light-coloured permanent dentition).',
+        'tet.adv':         'Advantages',
+        'tet.a1':          'Bulk Fill is possible due to Ivocerin, the patented light initiator',
     };
 
     /* ============================================================
@@ -254,6 +264,16 @@
         'omni.f3':         'تعامل استثنائي',
         'omni.fill':       'حبيبات OMNICHROMA واللون الهيكلي',
         'omni.p3':         'يتميز OMNICHROMA بأقصى قدرة على مطابقة الألوان على نطاق واسع، حيث يغطي جميع درجات VITA الكلاسيكية بدرجة لون واحدة فقط من الكومبوزيت، بفضل تقنية اللون الذكية من Tokuyama.',
+
+        /* --- Tetric N-Ceram Bulk Fill (داخل كرت الترميم) --- */
+        'tet.title':       'Tetric N-Ceram Bulk Fill',
+        'tet.p1':          'تعد Tetric N-Ceram Bulk Fill الكومبوزيت الخلفي الفعّال بسماكة أربعة مليمترات من مجموعة Tetric N-Collection النانوية المحسّنة.',
+        'tet.p2':          'تتيح Tetric N-Ceram Bulk Fill ترميم الأسنان الخلفية بطبقة واحدة فقط بسماكة تصل إلى أربعة مليمترات، مما يرفع كفاءة العمل بشكل ملحوظ.',
+        'tet.p3':          'المحفّز الضوئي الحاصل على براءة اختراع Ivocerin مسؤول عن ضمان بلمرة كاملة للحشوة. وبالمقارنة مع المحفّزات الضوئية التقليدية، فإن معزّز البلمرة Ivocerin أكثر تفاعلية بكثير، لذلك تبدأ البلمرة حتى في التجاويف العميقة جدًا ويتم معالجة المادة بالكامل.',
+        'tet.p4':          'يعمل مخفّف إجهاد الانكماش المُعالَج خصيصًا على إبقاء الانكماش وإجهاد الانكماش أثناء البلمرة عند أدنى حد.',
+        'tet.p5':          'تتوفر Tetric N-Ceram Bulk Fill في ثلاثة درجات عالمية: IVA و IVB و IVW (درجة A العالمية، ودرجة B العالمية، وللأسنان اللبنية أو الأسنان الدائمة فاتحة اللون).',
+        'tet.adv':         'المزايا',
+        'tet.a1':          'الحشو بطبقات سميكة ممكن بفضل Ivocerin، المحفّز الضوئي الحاصل على براءة اختراع',
     };
 
     /* ============================================================
