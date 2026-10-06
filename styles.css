@@ -1239,39 +1239,97 @@
         /* ===== Floating WhatsApp button ===== */
         .whatsapp-float {
             position: fixed;
-            bottom: 24px;
-            left: 24px;
-            min-width: 62px;
-            height: 62px;
-            padding: 0 18px;
-            background: linear-gradient(135deg, #25d366, #1baa5b);
-            border-radius: 50px;
+            bottom: 26px;
+            left: 26px;
+            width: 64px;
+            height: 64px;
+            padding: 0;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            background:
+                radial-gradient(circle at 32% 26%, rgba(255, 255, 255, .32), rgba(255, 255, 255, 0) 58%),
+                linear-gradient(150deg, #3bf07c 0%, #25d366 45%, #0f9d58 100%);
             color: var(--white);
             text-decoration: none;
             font-weight: 700;
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+            box-shadow:
+                0 0 0 4px rgba(8, 9, 10, .85),
+                0 0 0 5px rgba(199, 203, 209, .3),
+                inset 0 1px 0 rgba(255, 255, 255, .45),
+                0 14px 28px rgba(0, 0, 0, .5),
+                0 6px 18px rgba(37, 211, 102, .35);
             z-index: 100;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s cubic-bezier(.2, .8, .3, 1), box-shadow 0.3s ease;
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.08) translateY(-3px);
-            box-shadow: 0 12px 24px rgba(37, 211, 102, 0.45);
+        .whatsapp-float:hover,
+        .whatsapp-float:focus-visible {
+            transform: translateY(-3px) scale(1.06);
+            box-shadow:
+                0 0 0 4px rgba(8, 9, 10, .92),
+                0 0 0 5px rgba(199, 203, 209, .55),
+                inset 0 1px 0 rgba(255, 255, 255, .55),
+                0 20px 34px rgba(0, 0, 0, .55),
+                0 8px 26px rgba(37, 211, 102, .5);
         }
 
         .whatsapp-float svg {
-            width: 34px;
-            height: 34px;
+            position: relative;
+            width: 31px;
+            height: 31px;
             fill: var(--white);
             flex: 0 0 auto;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .35));
         }
 
+        /* soft ring that expands and fades, same idea as the chat launcher */
+        .wa-pulse {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 2px solid rgba(37, 211, 102, .65);
+            pointer-events: none;
+            animation: wa-pulse 2.8s cubic-bezier(.35, 0, .55, 1) infinite;
+        }
+
+        @keyframes wa-pulse {
+            0% { transform: scale(1); opacity: .7; }
+            70%, 100% { transform: scale(1.55); opacity: 0; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .wa-pulse {
+                animation: none;
+                opacity: .3;
+            }
+        }
+
+        /* label slides out of the badge on hover / keyboard focus */
         .whatsapp-label {
+            position: absolute;
+            left: calc(100% + 14px);
+            top: 50%;
+            transform: translate(-10px, -50%);
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--silver);
+            font-size: 0.82rem;
+            line-height: 1;
             white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, .45);
+            transition: opacity 0.25s ease, transform 0.25s ease;
+        }
+
+        .whatsapp-float:hover .whatsapp-label,
+        .whatsapp-float:focus-visible .whatsapp-label {
+            opacity: 1;
+            transform: translate(0, -50%);
         }
 
         /* ===== Responsive layout ===== */
@@ -1395,12 +1453,23 @@
                 padding: 22px 18px;
             }
 .whatsapp-float {
-                width: 58px;
-                min-width: 58px;
-                height: 58px;
+                width: 56px;
+                min-width: 56px;
+                height: 56px;
                 padding: 0;
                 left: 16px;
                 bottom: 16px;
+                box-shadow:
+                    0 0 0 3px rgba(8, 9, 10, .85),
+                    0 0 0 4px rgba(199, 203, 209, .3),
+                    inset 0 1px 0 rgba(255, 255, 255, .45),
+                    0 12px 24px rgba(0, 0, 0, .5),
+                    0 6px 16px rgba(37, 211, 102, .35);
+            }
+
+            .whatsapp-float svg {
+                width: 27px;
+                height: 27px;
             }
 
             .whatsapp-label {
@@ -1586,4 +1655,15 @@ html[dir="rtl"] .hero-arrow.next {
         right: auto;
         left: 12px;
     }
+}
+
+/* ===== Landing view = hero only ==================================
+   The search bar and the product section stay hidden until the
+   visitor opens them (nav "Products", hero CTA, or an
+   index.html#products deep link). Site.js adds .products-open
+   to <body>; <noscript> below in index.html turns it off again
+   for browsers running without JavaScript.                       */
+body:not(.products-open) .search-bar,
+body:not(.products-open) #products {
+    display: none;
 }

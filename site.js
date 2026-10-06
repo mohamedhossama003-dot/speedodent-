@@ -217,16 +217,47 @@ syncWhatsAppButton();
 renderPaymentMethods();
         renderSocialLinks();
 
+/* The landing view is the hero alone: the search bar and the product
+           section stay closed until something asks for #products — the nav
+           link, the hero CTA, or an index.html#products deep link opened
+           from the info page. */
+        function openProducts() {
+            const target = document.getElementById('products');
+            if (!target) return null;
+            document.body.classList.add('products-open');
+            return target;
+        }
+
+        /* the section is display:none on arrival, so give the browser one
+           paint to lay it out before scrolling to it */
+        function scrollToAfterPaint(el, smooth) {
+            if (!el) return;
+            requestAnimationFrame(function () {
+                requestAnimationFrame(function () {
+                    el.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto' });
+                });
+            });
+        }
+
 // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    if (target.id === 'products') {
+                        scrollToAfterPaint(openProducts(), true);
+                    } else {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
                     document.querySelector('.nav-links').classList.remove('active');
                     menuToggle.setAttribute('aria-expanded', 'false');
                     menuToggle.setAttribute('aria-label', SD.t('nav.menu.open'));
                 }
             });
         });
+
+        /* deep link: index.html#products (the info page's Products link) */
+        if (window.location.hash === '#products') {
+            scrollToAfterPaint(openProducts(), false);
+        }
