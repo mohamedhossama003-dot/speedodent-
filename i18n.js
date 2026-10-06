@@ -100,12 +100,6 @@
         /* aria */
         'aria.wa':         'Contact us on WhatsApp',
         'aria.home':       'Speedo Dent - home',
-        'aria.hero.prev':  'Previous image',
-        'aria.hero.next':  'Next image',
-        'aria.hero.dots':  'Choose hero image',
-        'aria.hero.1':     'Show image 1',
-        'aria.hero.2':     'Show image 2',
-        'aria.hero.3':     'Show image 3',
 
         /* product cards */
         'p.restorative.t': 'Restorative',
@@ -204,12 +198,6 @@
         /* aria */
         'aria.wa':         'تواصل معنا على واتساب',
         'aria.home':       'Speedo Dent - الرئيسية',
-        'aria.hero.prev':  'الصورة السابقة',
-        'aria.hero.next':  'الصورة التالية',
-        'aria.hero.dots':  'اختر صورة الهيرو',
-        'aria.hero.1':     'عرض الصورة 1',
-        'aria.hero.2':     'عرض الصورة 2',
-        'aria.hero.3':     'عرض الصورة 3',
 
         /* product cards */
         'p.restorative.t': 'الترميمي',

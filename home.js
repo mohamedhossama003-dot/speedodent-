@@ -1,21 +1,15 @@
 /* ============================================================
    HOME PAGE SCRIPT  -  index.html only
-   Hero slider, product search, the category sidebar and the
-   product grid filter. Needs the #products markup to be present.
+   Product search, the category sidebar and the product grid
+   filter. Needs the #products markup to be present.
    ============================================================ */
 
 const searchForm = document.querySelector('#searchForm');
         const productSearch = document.querySelector('#productSearch');
         const productCards = document.querySelectorAll('.product-card');
         const noResults = document.querySelector('#noResults');
-        const heroSlides = document.querySelectorAll('.hero-slide');
-        const heroDots = document.querySelectorAll('.hero-dot');
-        const previousHeroButton = document.querySelector('.hero-arrow.previous');
-        const nextHeroButton = document.querySelector('.hero-arrow.next');
         let activeFilter = 'all';
         let categoryPicked = false;   /* true when the sidebar chose the filter */
-        let activeHeroSlide = 0;
-        let heroTimer;
 
 /* Loose word match so "Cements" also finds "cement", and so
            "Glass Ionomer & Cements" finds a card that lists all three. */
@@ -556,39 +550,3 @@ if (window.SD) {
   };
   syncCatLabels();   /* in case the page booted straight into Arabic */
 }
-
-function showHeroSlide(index) {
-            activeHeroSlide = (index + heroSlides.length) % heroSlides.length;
-            heroSlides.forEach(function(slide, slideIndex) {
-                slide.classList.toggle('active', slideIndex === activeHeroSlide);
-            });
-            heroDots.forEach(function(dot, dotIndex) {
-                dot.classList.toggle('active', dotIndex === activeHeroSlide);
-            });
-        }
-
-        function restartHeroTimer() {
-            clearInterval(heroTimer);
-            heroTimer = setInterval(function() {
-                showHeroSlide(activeHeroSlide + 1);
-            }, 6000);
-        }
-
-        previousHeroButton.addEventListener('click', function() {
-            showHeroSlide(activeHeroSlide - 1);
-            restartHeroTimer();
-        });
-
-        nextHeroButton.addEventListener('click', function() {
-            showHeroSlide(activeHeroSlide + 1);
-            restartHeroTimer();
-        });
-
-        heroDots.forEach(function(dot, dotIndex) {
-            dot.addEventListener('click', function() {
-                showHeroSlide(dotIndex);
-                restartHeroTimer();
-            });
-        });
-
-restartHeroTimer();

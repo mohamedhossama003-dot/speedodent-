@@ -165,35 +165,6 @@
             padding: 120px 0 145px;
         }
 
-        .hero-slides,
-        .hero-slide,
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-        }
-
-        .hero-slides {
-            z-index: 0;
-        }
-
-        .hero-slide {
-            background-position: center;
-            background-size: cover;
-            opacity: 0;
-            transform: scale(1.04);
-            transition: opacity 0.8s ease, transform 6s ease;
-        }
-
-        .hero-slide.active {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        .hero-overlay {
-            z-index: 1;
-            background: linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.78));
-        }
-
         .hero::before,
         .hero::after {
             content: '';
@@ -319,72 +290,6 @@
             justify-content: center;
             gap: 16px;
             flex-wrap: wrap;
-        }
-
-        .hero-arrow {
-            position: absolute;
-            top: 50%;
-            z-index: 4;
-            width: 48px;
-            height: 48px;
-            border: 1px solid rgba(199, 203, 209, 0.6);
-            border-radius: 50%;
-            background: rgba(5, 5, 5, 0.55);
-            color: var(--silver);
-            cursor: pointer;
-            font-size: 1.8rem;
-            line-height: 1;
-            transform: translateY(-50%);
-            transition: background 0.25s, color 0.25s, transform 0.25s;
-        }
-
-        .hero-arrow:hover {
-            background: var(--silver);
-            color: #050505;
-            transform: translateY(-50%) scale(1.08);
-        }
-
-        .hero-arrow.previous {
-            left: 24px;
-        }
-
-        .hero-arrow.next {
-            right: 24px;
-        }
-
-        .hero-dots {
-            position: absolute;
-            right: 0;
-            bottom: 48px;
-            left: 0;
-            z-index: 4;
-            display: flex;
-            justify-content: center;
-            gap: 9px;
-        }
-
-        .hero-dot {
-            width: 9px;
-            height: 9px;
-            padding: 0;
-            border: 1px solid var(--silver);
-            border-radius: 50%;
-            background: transparent;
-            cursor: pointer;
-            transition: width 0.25s, border-radius 0.25s, background 0.25s;
-        }
-
-        .hero-dot.active {
-            width: 28px;
-            border-radius: 8px;
-            background: var(--silver);
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .hero-slide {
-                transition: opacity 0.2s ease;
-                transform: none;
-            }
         }
 
         .btn-primary,
@@ -1373,20 +1278,6 @@
                 padding: 90px 0 130px;
             }
 
-            .hero-arrow {
-                width: 40px;
-                height: 40px;
-                font-size: 1.45rem;
-            }
-
-            .hero-arrow.previous {
-                left: 12px;
-            }
-
-            .hero-arrow.next {
-                right: 12px;
-            }
-
             .products-layout {
                 grid-template-columns: 1fr;
             }
@@ -1633,28 +1524,6 @@ html[dir="rtl"] .cat-chev {
 html[dir="rtl"] .cat-l2[aria-expanded="true"] .cat-chev,
 html[dir="rtl"] .cat-l1[aria-expanded="true"] .cat-chev {
     transform: rotate(90deg);
-}
-
-html[dir="rtl"] .hero-arrow.previous {
-    left: auto;
-    right: 24px;
-}
-
-html[dir="rtl"] .hero-arrow.next {
-    right: auto;
-    left: 24px;
-}
-
-@media (max-width: 768px) {
-    html[dir="rtl"] .hero-arrow.previous {
-        left: auto;
-        right: 12px;
-    }
-
-    html[dir="rtl"] .hero-arrow.next {
-        right: auto;
-        left: 12px;
-    }
 }
 
 /* ===== Landing view = hero only ==================================
