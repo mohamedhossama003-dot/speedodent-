@@ -550,3 +550,67 @@ if (window.SD) {
   };
   syncCatLabels();   /* in case the page booted straight into Arabic */
 }
+
+/* ============================================================
+   PRODUCT PHOTO -> DESCRIPTION (accordion inside the card)
+   Clicking a product photo reveals that product's description
+   inside its card. Owners that have no photos yet (e.g. Tetric
+   until its image ships) stay open, so nothing is unreachable.
+   ============================================================ */
+(function () {
+  var owners = {};   /* owner id -> array of its clickable photos */
+  document.querySelectorAll('.card-photo[data-open]').forEach(function (img) {
+    var o = img.getAttribute('data-open');
+    (owners[o] = owners[o] || []).push(img);
+    img.setAttribute('tabindex', '0');
+    img.setAttribute('role', 'button');
+  });
+
+  function ownerBlocks(o) {
+    return Array.prototype.filter.call(document.querySelectorAll('.omni[data-owner]'), function (b) {
+      return b.getAttribute('data-owner') === o;
+    });
+  }
+
+  function refreshAria() {
+    document.querySelectorAll('.card-photo[data-open]').forEach(function (img) {
+      var o = img.getAttribute('data-open');
+      var open = ownerBlocks(o).some(function (b) { return b.classList.contains('open'); });
+      img.setAttribute('aria-expanded', String(open));
+    });
+  }
+
+  function switchDesc(on) {
+    var clicks = document.querySelectorAll('.card-photo[data-open]');
+    Array.prototype.forEach.call(clicks, function (img) {
+      var o = img.getAttribute('data-open');
+      /* only owners that have clickable photos participate in the toggle */
+      if (!owners[o] || !owners[o].length) return;
+      document.querySelectorAll('.omni[data-owner="' + o + '"]').forEach(function (b) {
+        b.classList.toggle('open', o === on);
+      });
+    });
+    refreshAria();
+  }
+
+  /* image-less owners stay visible (Tetric until its photo arrives) */
+  document.querySelectorAll('.omni[data-owner]').forEach(function (b) {
+    var o = b.getAttribute('data-owner');
+    if (!owners[o] || !owners[o].length) b.classList.add('open');
+  });
+  refreshAria();
+
+  document.addEventListener('click', function (e) {
+    var img = e.target.closest ? e.target.closest('.card-photo[data-open]') : null;
+    if (!img) return;
+    switchDesc(img.getAttribute('data-open'));
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var t = e.target;
+    if (!t || !t.classList || !t.classList.contains('card-photo')) return;
+    e.preventDefault();
+    switchDesc(t.getAttribute('data-open'));
+  });
+})();
