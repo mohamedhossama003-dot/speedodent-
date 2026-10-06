@@ -117,6 +117,7 @@
         'p.hygiene.t':     'Hygiene & Prevention',
         'p.hygiene.d':     'Sterilization systems, X-ray units, turbines, lasers, cameras, ultrasonic scalers, anesthesia and preventive care.',
         'p.rest.img':      'Composite restorative product',
+        'g.composite':     'Composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
         'omni.title':      'Every Shade, One Choice',
@@ -234,6 +235,7 @@
         'p.hygiene.t':     'النظافة والوقاية',
         'p.hygiene.d':     'أنظمة تعقيم وأجهزة أشعة وتوربينات وليزر وكاميرات وجرافات فوق صوتية وتخدير ورعاية وقائية.',
         'p.rest.img':      'منتج كمبوزيت ترميمي',
+        'g.composite':     'الكمبوزيت',
 
         /* --- OMNICHROMA (داخل كرت الترميم) --- */
         'omni.title':      'كل درجة لون، اختيار واحد',
