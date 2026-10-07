@@ -31,6 +31,8 @@
         'nav.menu.open':   'Open menu',
         'nav.menu.close':  'Close menu',
         'nav.lang':        'Language',
+        'nav.theme.light': 'Switch to light theme',
+        'nav.theme.dark':  'Switch to dark theme',
 
         /* search */
         'search.label':    'Product search',
@@ -119,6 +121,8 @@
         'p.rest.img':      'Composite restorative product',
         'g.composite':     'Composite',
         'g.hint':          'Tap a product photo to read its description.',
+        'prod.order':      'Order on WhatsApp',
+        'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
         'omni.title':      'Every Shade, One Choice',
@@ -160,6 +164,8 @@
         'nav.menu.open':   'فتح القائمة',
         'nav.menu.close':  'إغلاق القائمة',
         'nav.lang':        'اللغة',
+        'nav.theme.light': 'التبديل إلى الثيم الفاتح',
+        'nav.theme.dark':  'التبديل إلى الثيم الداكن',
 
         /* search */
         'search.label':    'البحث عن المنتجات',
@@ -248,6 +254,8 @@
         'p.rest.img':      'منتج كمبوزيت ترميمي',
         'g.composite':     'الكمبوزيت',
         'g.hint':          'اضغط على صورة المنتج لقراءة الوصف.',
+        'prod.order':      'اطلب عبر واتساب',
+        'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
         /* --- OMNICHROMA (داخل كرت الترميم) --- */
         'omni.title':      'كل درجة لون، اختيار واحد',

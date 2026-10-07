@@ -261,3 +261,34 @@ renderPaymentMethods();
         if (window.location.hash === '#products') {
             scrollToAfterPaint(openProducts(), false);
         }
+
+/* ============================================================
+   THEME TOGGLE  -  dark (default) / light.
+   The class lives on <html> so the page renders correctly before
+   the first paint (each page's <head> boot script applies the
+   saved choice). Sun and moon glyphs swap with a soft motion.
+   ============================================================ */
+(function () {
+    const btn = document.getElementById('themeToggle');
+
+    function updateThemeUI(light) {
+        if (!btn) return;
+        btn.setAttribute('aria-pressed', String(light));
+        btn.setAttribute('aria-label', SD.t(light ? 'nav.theme.dark' : 'nav.theme.light'));
+        const meta = document.getElementById('themeColor');
+        if (meta) meta.setAttribute('content', light ? '#f4f6f8' : '#08090a');
+    }
+
+    function toggleTheme() {
+        const light = document.documentElement.classList.toggle('light-mode');
+        localStorage.setItem('theme', light ? 'light' : 'dark');
+        updateThemeUI(light);
+        return light;
+    }
+
+    /* keep aria / theme-color in sync if the head boot script already
+       applied light mode (or if nothing was saved yet: dark default) */
+    updateThemeUI(document.documentElement.classList.contains('light-mode'));
+
+    if (btn) btn.addEventListener('click', toggleTheme);
+})();

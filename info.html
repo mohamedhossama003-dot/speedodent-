@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>try{var L=localStorage.getItem("sd_lang");if(L==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl";}}catch(e){}</script>
+    <script>try{if(localStorage.getItem("theme")==="light"){document.documentElement.classList.add("light-mode");}}catch(e){}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info | Speedo Dent - About, Ways to Pay & Contact</title>
     <meta name="description" content="About Speedo Dent dental supplies in Alexandria: who we are, how you can pay (InstaPay, Vodafone Cash, PayPal, Visa, Cash), how to contact us and where to follow us.">
@@ -16,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="mask-icon" href="favicon.ico" color="#c7cbd1">
-    <meta name="theme-color" content="#08090a">
+    <meta name="theme-color" id="themeColor" content="#08090a">
 
     <!-- Open Graph (Facebook / WhatsApp share preview) -->
     <meta property="og:type" content="website">
@@ -58,6 +59,7 @@
                 </ul>
             </nav>
             <div class="nav-actions">
+                <button type="button" id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Switch to light theme"><svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.4"></circle><path d="M12 2.6v2.3M12 19.1v2.3M2.6 12h2.3M19.1 12h2.3M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"></path></svg><svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.8A8.4 8.4 0 1 1 10.2 3.4a6.8 6.8 0 0 0 10.4 10.4z"></path></svg></button>
                 <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en" class="on" aria-pressed="true">EN</button><button type="button" data-lang="ar" aria-pressed="false">ع</button></div>
                 <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" data-i18n-attr="aria-label:nav.menu.open">☰</button>
             </div>

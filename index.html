@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>try{var L=localStorage.getItem("sd_lang");if(L==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl";}}catch(e){}</script>
+    <script>try{if(localStorage.getItem("theme")==="light"){document.documentElement.classList.add("light-mode");}}catch(e){}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speedo Dent | Dental Supplies</title>
     <meta name="description" content="Speedo Dent - Quality dental supplies and equipment. Browse our range of dental products and get in touch for orders and enquiries.">
@@ -15,7 +16,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="mask-icon" href="favicon.ico" color="#c7cbd1">
-    <meta name="theme-color" content="#08090a">
+    <meta name="theme-color" id="themeColor" content="#08090a">
 
     <!-- Open Graph (Facebook / WhatsApp share preview) -->
     <meta property="og:type" content="website">
@@ -66,6 +67,7 @@
                 </ul>
             </nav>
             <div class="nav-actions">
+                <button type="button" id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Switch to light theme"><svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.4"></circle><path d="M12 2.6v2.3M12 19.1v2.3M2.6 12h2.3M19.1 12h2.3M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"></path></svg><svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.8A8.4 8.4 0 1 1 10.2 3.4a6.8 6.8 0 0 0 10.4 10.4z"></path></svg></button>
                 <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en" class="on" aria-pressed="true">EN</button><button type="button" data-lang="ar" aria-pressed="false">ع</button></div>
                 <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" data-i18n-attr="aria-label:nav.menu.open">☰</button>
             </div>
@@ -108,73 +110,90 @@
 
                 <div class="products-grid" id="productsGrid">
                 <div class="product-card has-photo" data-category="restorative" data-keywords="restorative composite amalgam glass ionomer cement base liner matrix wedge isolation isolation material finishing polishing acid etch bonding bleaching caries detector temporary filling dental bur crown form membrane dressing restorative materials filling consumables consumable instrument instruments equipment miscellaneous accessories">
-                    <div class="card-split">
-                        <div class="card-photos">
-                            <div class="img-group">
-                                <span class="img-group-name" data-i18n="g.composite">Composite</span>
-                                <div class="img-grid">
-                                    <img class="card-photo" src="composite-product.jpg" width="512" height="384" alt="Composite restorative product" data-i18n-attr="alt:p.rest.img" data-open="omni" loading="lazy" decoding="async">
-                                    <img class="card-photo" src="composite-2.jpg" width="1064" height="744" alt="Composite restorative product" data-i18n-attr="alt:p.rest.img" data-open="omni" loading="lazy" decoding="async">
-                                </div>
-                            </div>
-                            <p class="photos-hint" data-i18n="g.hint">Tap a product photo to read its description.</p>
-                        </div>
-                        <div class="card-body">
-                            <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.4 3.2h11.2a2 2 0 0 1 2 2v13.6a2 2 0 0 1-2 2H6.4a2 2 0 0 1-2-2V5.2a2 2 0 0 1 2-2z"/><path d="M8 7.6h8M8 11h8M8 14.4h5"/></svg></div>
-                            <h3 data-i18n="p.restorative.t">Restorative</h3>
-                            <p data-i18n="p.restorative.d">Composite, amalgam, glass ionomer, liners, matrices, etching and bonding, caries detectors, temporary fillings, burs and crown forms.</p>
-                            <span class="price" data-i18n="products.more">Discover More</span>
-                        </div>
+<div class="card-head">
+                        <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.4 3.2h11.2a2 2 0 0 1 2 2v13.6a2 2 0 0 1-2 2H6.4a2 2 0 0 1-2-2V5.2a2 2 0 0 1 2-2z"/><path d="M8 7.6h8M8 11h8M8 14.4h5"/></svg></div>
+                        <h3 data-i18n="p.restorative.t">Restorative</h3>
+                        <p data-i18n="p.restorative.d">Composite, amalgam, glass ionomer, liners, matrices, etching and bonding, caries detectors, temporary fillings, burs and crown forms.</p>
+                        <span class="price" data-i18n="products.more">Discover More</span>
                     </div>
 
-                    <div class="omni" data-owner="omni">
-                        <h4 class="omni-title" data-i18n="omni.title">Every Shade, One Choice</h4>
-                        <p data-i18n="omni.p1">OMNICHROMA is the world's first universal composite that esthetically matches every patient, from A1 to D4, with a single shade. Its uniformly sized supra-nano spherical fillers (260nm spherical SiO2-ZrO2) allow OMNICHROMA to match every one of the 16 VITA classical shades, a science that we call Smart Chromatic Technology.</p>
-                        <p data-i18n="omni.p2">Its wide color-matching ability eliminates the shade-taking procedure, reducing composite inventory and saving doctors time and money.</p>
+                    <div class="catalog">
 
-                        <div class="omni-cols">
-                            <div class="omni-block">
-                                <h5 data-i18n="omni.use">Universal Use</h5>
+                        <div class="prod-row" data-owner="omni">
+                            <div class="prod-thumb">
+                                <img class="card-photo" src="composite-product.jpg" width="512" height="384" alt="OMNICHROMA universal composite" data-i18n-attr="alt:omni.img" data-open="omni" tabindex="0" loading="lazy" decoding="async">
+                                <img class="card-photo" src="composite-2.jpg" width="1064" height="744" alt="OMNICHROMA universal composite" data-i18n-attr="alt:omni.img" data-open="omni" tabindex="0" loading="lazy" decoding="async">
+                            </div>
+                            <div class="prod-info">
+                                <h4>OMNICHROMA</h4>
+                                <span class="prod-tag" data-i18n="omni.title">Every Shade, One Choice</span>
                                 <div class="chip-row">
                                     <span class="chip" data-i18n="omni.c1">Every shade</span>
                                     <span class="chip" data-i18n="omni.c2">Every class</span>
                                     <span class="chip" data-i18n="omni.c3">Stunning Esthetics</span>
                                 </div>
+                                <div class="prod-actions">
+                                    <a class="prod-cta" href="https://wa.me/201040931823?text=Hello%20Speedo%20Dent!%20I%27m%20interested%20in%20OMNICHROMA%20(Every%20Shade%2C%20One%20Choice)." target="_blank" rel="noopener">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                        <span data-i18n="prod.order">Order on WhatsApp</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="omni-block">
-                                <h5 data-i18n="omni.match">Unprecedented color matching</h5>
-                                <ul class="omni-list">
-                                    <li data-i18n="omni.m1">Shade matches both before and after bleaching</li>
-                                    <li data-i18n="omni.m2">High polishability</li>
-                                </ul>
-                            </div>
-                            <div class="omni-block">
-                                <h5 data-i18n="omni.ph">Excellent Physical-Mechanical Properties</h5>
-                                <ul class="omni-list">
-                                    <li data-i18n="omni.f1">Highest wear resistance</li>
-                                    <li data-i18n="omni.f2">High compressive strength</li>
-                                    <li data-i18n="omni.f3">Exceptional handling</li>
-                                </ul>
+                            <div class="prod-desc">
+                                <p data-i18n="omni.p1">OMNICHROMA is the world's first universal composite that esthetically matches every patient, from A1 to D4, with a single shade. Its uniformly sized supra-nano spherical fillers (260nm spherical SiO2-ZrO2) allow OMNICHROMA to match every one of the 16 VITA classical shades, a science that we call Smart Chromatic Technology.</p>
+                                <p data-i18n="omni.p2">Its wide color-matching ability eliminates the shade-taking procedure, reducing composite inventory and saving doctors time and money.</p>
+                                <div class="pd-cols">
+                                    <div>
+                                        <h5 data-i18n="omni.use">Universal Use</h5>
+                                        <div class="chip-row">
+                                            <span class="chip" data-i18n="omni.c1">Every shade</span>
+                                            <span class="chip" data-i18n="omni.c2">Every class</span>
+                                            <span class="chip" data-i18n="omni.c3">Stunning Esthetics</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 data-i18n="omni.match">Unprecedented color matching</h5>
+                                        <ul class="omni-list">
+                                            <li data-i18n="omni.m1">Shade matches both before and after bleaching</li>
+                                            <li data-i18n="omni.m2">High polishability</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 data-i18n="omni.ph">Excellent Physical-Mechanical Properties</h5>
+                                        <ul class="omni-list">
+                                            <li data-i18n="omni.f1">Highest wear resistance</li>
+                                            <li data-i18n="omni.f2">High compressive strength</li>
+                                            <li data-i18n="omni.f3">Exceptional handling</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="pd-fill">
+                                    <h5 data-i18n="omni.fill">OMNICHROMA Fillers &amp; Structural Color</h5>
+                                    <p data-i18n="omni.p3">OMNICHROMA exhibits the ultimate wide-range color-matching ability, covering all VITA classical shades with just one shade of composite, thanks to Tokuyama's Smart Chromatic Technology.</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="omni-fill">
-                            <h5 data-i18n="omni.fill">OMNICHROMA Fillers &amp; Structural Color</h5>
-                            <p data-i18n="omni.p3">OMNICHROMA exhibits the ultimate wide-range color-matching ability, covering all VITA classical shades with just one shade of composite, thanks to Tokuyama's Smart Chromatic Technology.</p>
+                        <div class="tetric-details">
+                            <h4 data-i18n="tet.title">Tetric N-Ceram Bulk Fill</h4>
+                            <p data-i18n="tet.p2">Tetric N-Ceram Bulk Fill enables posterior teeth to be restored with only one layer measuring up to four-millimetres in thickness, which considerably heightens efficiency.</p>
+                            <p data-i18n="tet.p3">The patented light activator Ivocerin is responsible for ensuring the complete cure of the filling. Compared with conventional light initiators, the Ivocerin polymerisation booster is much more reactive. Therefore, polymerisation is initiated even in very deep cavities and the material is fully cured.</p>
+                            <p data-i18n="tet.p4">A specially conditioned shrinkage stress reliever keeps shrinkage and shrinkage stress during polymerisation to a minimum.</p>
+                            <p data-i18n="tet.p5">Tetric N-Ceram Bulk Fill is available in three universal shades: IVA, IVB and IVW (universal A shade, universal B shade and for deciduous teeth or light-coloured permanent dentition).</p>
+                            <h5 data-i18n="tet.adv">Advantages</h5>
+                            <ul class="omni-list">
+                                <li data-i18n="tet.a1">Bulk Fill is possible due to Ivocerin, the patented light initiator</li>
+                            </ul>
+                            <div class="prod-actions">
+                                <a class="prod-cta" href="https://wa.me/201040931823?text=Hello%20Speedo%20Dent!%20I%27m%20interested%20in%20Tetric%20N-Ceram%20Bulk%20Fill." target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                    <span data-i18n="prod.order">Order on WhatsApp</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="omni tetric" data-owner="tetric">
-                        <h4 class="omni-title" data-i18n="tet.title">Tetric N-Ceram Bulk Fill</h4>
-                        <p data-i18n="tet.p1">Tetric N-Ceram Bulk Fill is the efficient four-millimetres posterior composite of the nano-optimized Tetric N-Collection.</p>
-                        <p data-i18n="tet.p2">Tetric N-Ceram Bulk Fill enables posterior teeth to be restored with only one layer measuring up to four-millimetres in thickness, which considerably heightens efficiency.</p>
-                        <p data-i18n="tet.p3">The patented light activator Ivocerin is responsible for ensuring the complete cure of the filling. Compared with conventional light initiators, the Ivocerin polymerisation booster is much more reactive. Therefore, polymerisation is initiated even in very deep cavities and the material is fully cured.</p>
-                        <p data-i18n="tet.p4">A specially conditioned shrinkage stress reliever keeps shrinkage and shrinkage stress during polymerisation to a minimum.</p>
-                        <p data-i18n="tet.p5">Tetric N-Ceram Bulk Fill is available in three universal shades: IVA, IVB and IVW (universal A shade, universal B shade and for deciduous teeth or light-coloured permanent dentition).</p>
-                        <h5 data-i18n="tet.adv">Advantages</h5>
-                        <ul class="omni-list">
-                            <li data-i18n="tet.a1">Bulk Fill is possible due to Ivocerin, the patented light initiator</li>
-                        </ul>
+                        <p class="photos-hint" data-i18n="g.hint">Tap a product photo to read its description.</p>
+
                     </div>
                 </div>
                 <div class="product-card" data-category="endodontics" data-keywords="endodontics endodontic endo manual file rotary file paper point gutta percha gates glidden pessoa reamer sealer accessory vitality tester medication irrigation barbed broach regenerative cement spreader plugger bur paste carrier endomotor apex locator handpiece obturation map system root canal endo consumables consumable instrument instruments equipment miscellaneous accessories">

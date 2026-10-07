@@ -547,69 +547,58 @@ if (window.SD) {
     const act = document.querySelector('.cat-btn.active');
     if (act) productSearch.value = activeTerm(act);
     filterProducts();
+    /* keep the theme button's spoken label in the new language */
+    const tb = document.getElementById('themeToggle');
+    if (tb) tb.setAttribute('aria-label', SD.t(document.documentElement.classList.contains('light-mode') ? 'nav.theme.dark' : 'nav.theme.light'));
   };
   syncCatLabels();   /* in case the page booted straight into Arabic */
 }
 
 /* ============================================================
    PRODUCT PHOTO -> DESCRIPTION (accordion inside the card)
-   Clicking a product photo reveals that product's description
-   inside its card. Owners that have no photos yet (e.g. Tetric
-   until its image ships) stay open, so nothing is unreachable.
+   Clicking a product's photo reveals that product's full
+   description inside its catalog row. Rows without a clickable
+   photo (their text sits in a plain block below the rows) are
+   always visible, so nothing is ever unreachable.
    ============================================================ */
 (function () {
-  var owners = {};   /* owner id -> array of its clickable photos */
-  document.querySelectorAll('.card-photo[data-open]').forEach(function (img) {
-    var o = img.getAttribute('data-open');
-    (owners[o] = owners[o] || []).push(img);
-    img.setAttribute('tabindex', '0');
-    img.setAttribute('role', 'button');
-  });
-
-  function ownerBlocks(o) {
-    return Array.prototype.filter.call(document.querySelectorAll('.omni[data-owner]'), function (b) {
-      return b.getAttribute('data-owner') === o;
-    });
+  function rowOf(owner) {
+    return Array.prototype.filter.call(
+      document.querySelectorAll('.prod-row[data-owner]'),
+      function (r) { return r.getAttribute('data-owner') === owner; }
+    );
   }
 
   function refreshAria() {
-    document.querySelectorAll('.card-photo[data-open]').forEach(function (img) {
-      var o = img.getAttribute('data-open');
-      var open = ownerBlocks(o).some(function (b) { return b.classList.contains('open'); });
-      img.setAttribute('aria-expanded', String(open));
+    document.querySelectorAll('[data-open]').forEach(function (el) {
+      var o = el.getAttribute('data-open');
+      var open = rowOf(o).some(function (r) { return r.classList.contains('open'); });
+      el.setAttribute('aria-expanded', String(open));
     });
   }
 
   function switchDesc(on) {
-    var clicks = document.querySelectorAll('.card-photo[data-open]');
-    Array.prototype.forEach.call(clicks, function (img) {
-      var o = img.getAttribute('data-open');
-      /* only owners that have clickable photos participate in the toggle */
-      if (!owners[o] || !owners[o].length) return;
-      document.querySelectorAll('.omni[data-owner="' + o + '"]').forEach(function (b) {
-        b.classList.toggle('open', o === on);
-      });
+    document.querySelectorAll('.prod-row[data-owner]').forEach(function (row) {
+      var o = row.getAttribute('data-owner');
+      /* only rows that have a clickable trigger participate in the toggle */
+      if (!row.querySelector('[data-open]')) return;
+      row.classList.toggle('open', o === on);
     });
     refreshAria();
   }
 
-  /* image-less owners stay visible (Tetric until its photo arrives) */
-  document.querySelectorAll('.omni[data-owner]').forEach(function (b) {
-    var o = b.getAttribute('data-owner');
-    if (!owners[o] || !owners[o].length) b.classList.add('open');
-  });
   refreshAria();
 
   document.addEventListener('click', function (e) {
-    var img = e.target.closest ? e.target.closest('.card-photo[data-open]') : null;
-    if (!img) return;
-    switchDesc(img.getAttribute('data-open'));
+    var t = e.target.closest ? e.target.closest('[data-open]') : null;
+    if (!t) return;
+    switchDesc(t.getAttribute('data-open'));
   });
 
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Enter' && e.key !== ' ') return;
     var t = e.target;
-    if (!t || !t.classList || !t.classList.contains('card-photo')) return;
+    if (!t || !t.getAttribute || !t.getAttribute('data-open')) return;
     e.preventDefault();
     switchDesc(t.getAttribute('data-open'));
   });
