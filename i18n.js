@@ -120,11 +120,8 @@
         'p.hygiene.d':     'Sterilization systems, X-ray units, turbines, lasers, cameras, ultrasonic scalers, anesthesia and preventive care.',
         'p.rest.img':      'Composite restorative product',
         'g.composite':     'Composite',
-        'g.hint':          'Tap the composite photo to open the full composites gallery.',
-        'comp.back':       '← Back to Products',
-        'comp.lead':       'All our restorative composites in one place — each product with its own photo. Tap the WhatsApp button to order any of them.',
+        'g.hint':          'Every composite has its own photo and full details below.',
         'comp.wait':       'Photo coming soon',
-        'comp.open':       'Open the full composites gallery',
         'prod.order':      'Order on WhatsApp',
         'omni.img':        'OMNICHROMA universal composite',
 
@@ -148,6 +145,7 @@
 
         /* --- Tetric N-Ceram Bulk Fill (inside the Restorative card) --- */
         'tet.title':       'Tetric N-Ceram Bulk Fill',
+        'tet.info':        'One layer. Up to four millimetres.',
         'tet.p1':          'Tetric N-Ceram Bulk Fill is the efficient four-millimetres posterior composite of the nano-optimized Tetric N-Collection.',
         'tet.p2':          'Tetric N-Ceram Bulk Fill enables posterior teeth to be restored with only one layer measuring up to four-millimetres in thickness, which considerably heightens efficiency.',
         'tet.p3':          "The patented light activator Ivocerin is responsible for ensuring the complete cure of the filling. Compared with conventional light initiators, the Ivocerin polymerisation booster is much more reactive. Therefore, polymerisation is initiated even in very deep cavities and the material is fully cured.",
@@ -257,11 +255,8 @@
         'p.hygiene.d':     'أنظمة تعقيم وأجهزة أشعة وتوربينات وليزر وكاميرات وجرافات فوق صوتية وتخدير ورعاية وقائية.',
         'p.rest.img':      'منتج كمبوزيت ترميمي',
         'g.composite':     'الكمبوزيت',
-        'g.hint':          'اضغط على صورة الكمبوزيت لفتح جاليري الكمباوزيت.',
-        'comp.back':       '→ العودة إلى المنتجات',
-        'comp.lead':       'كل كمباوزيت الترميم في مكان واحد — كل منتج بصورته الخاصة. اضغط زر واتساب لطلب أيٍّ منها.',
+        'g.hint':          'كل كمباوزيت له صورته وتفاصيله الكاملة بالأسفل.',
         'comp.wait':       'الصورة قادمة قريبًا',
-        'comp.open':       'افتح جاليري الكمباوزيت',
         'prod.order':      'اطلب عبر واتساب',
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
@@ -285,6 +280,7 @@
 
         /* --- Tetric N-Ceram Bulk Fill (داخل كرت الترميم) --- */
         'tet.title':       'Tetric N-Ceram Bulk Fill',
+        'tet.info':        'طبقة واحدة. حتى أربعة مليمترات.',
         'tet.p1':          'تعد Tetric N-Ceram Bulk Fill الكومبوزيت الخلفي الفعّال بسماكة أربعة مليمترات من مجموعة Tetric N-Collection النانوية المحسّنة.',
         'tet.p2':          'تتيح Tetric N-Ceram Bulk Fill ترميم الأسنان الخلفية بطبقة واحدة فقط بسماكة تصل إلى أربعة مليمترات، مما يرفع كفاءة العمل بشكل ملحوظ.',
         'tet.p3':          'المحفّز الضوئي الحاصل على براءة اختراع Ivocerin مسؤول عن ضمان بلمرة كاملة للحشوة. وبالمقارنة مع المحفّزات الضوئية التقليدية، فإن معزّز البلمرة Ivocerin أكثر تفاعلية بكثير، لذلك تبدأ البلمرة حتى في التجاويف العميقة جدًا ويتم معالجة المادة بالكامل.',
