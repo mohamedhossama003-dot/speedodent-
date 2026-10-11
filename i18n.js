@@ -121,7 +121,6 @@
         'p.rest.img':      'Composite restorative product',
         'g.composite':     'Composite',
         'g.hint':          'Every composite has its own photo and full details below.',
-        'comp.wait':       'Photo coming soon',
         'prod.order':      'Order on WhatsApp',
         'omni.img':        'OMNICHROMA universal composite',
 
@@ -256,7 +255,6 @@
         'p.rest.img':      'منتج كمبوزيت ترميمي',
         'g.composite':     'الكمبوزيت',
         'g.hint':          'كل كمباوزيت له صورته وتفاصيله الكاملة بالأسفل.',
-        'comp.wait':       'الصورة قادمة قريبًا',
         'prod.order':      'اطلب عبر واتساب',
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 

@@ -719,26 +719,6 @@
             margin-top: 12px;
         }
 
-        .prod-thumb--tile {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 130px;
-            padding: 14px;
-            border-radius: 14px;
-            border: 1px dashed rgba(199, 203, 209, 0.35);
-            background: var(--surface);
-            text-align: center;
-            font-weight: 700;
-            font-size: 0.95rem;
-            line-height: 1.45;
-            color: var(--silver);
-        }
-
-        .prod-thumb--tile span {
-            pointer-events: none;
-        }
-
         .prod-info {
             min-width: 0;
         }
@@ -926,10 +906,6 @@
 
             .prod-thumb .card-photo + .card-photo {
                 margin-top: 0;
-            }
-
-            .prod-thumb--tile {
-                min-height: 96px;
             }
 
             .pd-cols {
