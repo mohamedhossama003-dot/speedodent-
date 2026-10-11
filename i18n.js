@@ -132,6 +132,13 @@
         'sh.p1':           'EZ-Shine Composite Polishing Paste is specially formulated for high gloss polishing of all composite surfaces. (Oil Free - Oil Free - No Metal Contents)',
         'comp.shine.img':  'EZ-Shine Composite Polishing Paste',
 
+        /* --- Herculite Classic (Kerr) — featured in the gallery --- */
+        'hc.title':        'Herculite Classic',
+        'hc.tag':          'Universal microhybrid composite',
+        'hc.kit':          'Kit TK: 5 syringes enamel 5 gm (1×A1, 2×A2, 1×A3, 1×B1); 2 gel etchant syringes (3 ml)',
+        'hc.p1':           'Herculite Classic™ is a microhybrid composite developed using the Vita® color scale. Thanks to its superior application features, you can easily perform anatomical shaping with Herculite Classic. The proven clinical efficacy of Herculite Classic for over 15 years, its long-lasting aesthetic results and excellent wear rates are a testament to the reliability and durability of the composite. Herculite maximizes versatility with its 38 opacities and offers a solution for each of your clinical cases with syringes and disposable forms.',
+        'hc.img':          'Herculite Classic composite (Kerr)',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -275,6 +282,13 @@
         'sh.info':         'تلميع عالي اللمعان لجميع أسطح الكمبوزيت',
         'sh.p1':           'معجون تلميع EZ-Shine مصمم خصيصًا للتلميع عالي اللمعان لجميع أسطح الكمبوزيت. (خالٍ من الزيوت – لا يحتوي على معادن)',
         'comp.shine.img':  'معجون تلميع EZ-Shine',
+
+        /* --- Herculite Classic (Kerr) — بارز في الجاليري --- */
+        'hc.title':        'Herculite Classic',
+        'hc.tag':          'كمبوزيت ميكروهايبرد متعدد الاستخدامات',
+        'hc.kit':          'محتوى الكيت: 5 سرنجات مينا بوزن 5 جم (1×A1، 2×A2، 1×A3، 1×B1)؛ سرنجتان من جل الحفر (3 مل)',
+        'hc.p1':           'Herculite Classic هو كمبوزيت ميكروهايبرد تم تطويره باستخدام مقياس ألوان Vita®. بفضل خصائصه التطبيقية الفائقة، يمكنك بسهولة إجراء التشكيل التشريحي باستخدام Herculite Classic. إن الفعالية السريرية المثبتة لهذا الكمبوزيت لأكثر من 15 عامًا، ونتائجه الجمالية طويلة الأمد ومعدلات تآكله الممتازة، هي دليل على موثوقيته ومتانته. يزيد Herculite من مرونته بـ 38 درجة لون، ويقدم حلًا لكل حالة سريرية في صورة سرنجات وعبوات جاهزة.',
+        'hc.img':          'كمبوزيت Herculite Classic (Kerr)',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
