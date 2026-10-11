@@ -560,7 +560,7 @@ if (window.SD) {
    card's full details (and folds it again on the next press).
    ============================================================ */
 (function () {
-  const cards = document.querySelectorAll('.comp-card');
+  const cards = document.querySelectorAll('.comp-card, .comp-gallery-feat');
   if (!cards.length) return;
 
   function syncLabel(card, btn) {

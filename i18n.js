@@ -120,11 +120,18 @@
         'p.hygiene.d':     'Sterilization systems, X-ray units, turbines, lasers, cameras, ultrasonic scalers, anesthesia and preventive care.',
         'p.rest.img':      'Composite restorative product',
         'g.composite':     'Composite',
-        'g.hint':          'Photo and name for each composite — press "Know more" for the full details.',
+        'g.hint':          'Photo and name for each product — press "Know more" for the full details.',
         'g.comp.title':    'Composite photos',
         'prod.order':      'Order on WhatsApp',
         'comp.more':       'Know more',
         'comp.less':       'Show less',
+
+        /* --- EZ-Shine Composite Polishing Paste (featured in the gallery) --- */
+        'sh.title':        'EZ-Shine Composite Polishing Paste',
+        'sh.info':         'High gloss polishing for all composite surfaces',
+        'sh.p1':           'EZ-Shine Composite Polishing Paste is specially formulated for high gloss polishing of all composite surfaces. (Oil Free - Oil Free - No Metal Contents)',
+        'comp.shine.img':  'EZ-Shine Composite Polishing Paste',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -257,11 +264,18 @@
         'p.hygiene.d':     'أنظمة تعقيم وأجهزة أشعة وتوربينات وليزر وكاميرات وجرافات فوق صوتية وتخدير ورعاية وقائية.',
         'p.rest.img':      'منتج كمبوزيت ترميمي',
         'g.composite':     'الكمبوزيت',
-        'g.hint':          'صورة واسم لكل كمباوزيت — اضغط "معرفة المزيد" للتفاصيل الكاملة.',
+        'g.hint':          'صورة واسم لكل منتج — اضغط "معرفة المزيد" للتفاصيل الكاملة.',
         'g.comp.title':    'صور الكمبوزيت',
         'prod.order':      'اطلب عبر واتساب',
         'comp.more':       'معرفة المزيد',
         'comp.less':       'إظهار أقل',
+
+        /* --- EZ-Shine (معجون تلميع الكمبوزيت — بارز في الجاليري) --- */
+        'sh.title':        'معجون تلميع EZ-Shine',
+        'sh.info':         'تلميع عالي اللمعان لجميع أسطح الكمبوزيت',
+        'sh.p1':           'معجون تلميع EZ-Shine مصمم خصيصًا للتلميع عالي اللمعان لجميع أسطح الكمبوزيت. (خالٍ من الزيوت – لا يحتوي على معادن)',
+        'comp.shine.img':  'معجون تلميع EZ-Shine',
+
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
         /* --- OMNICHROMA (داخل كرت الترميم) --- */
