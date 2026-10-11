@@ -139,6 +139,21 @@
         'hc.p1':           'Herculite Classic™ is a microhybrid composite developed using the Vita® color scale. Thanks to its superior application features, you can easily perform anatomical shaping with Herculite Classic. The proven clinical efficacy of Herculite Classic for over 15 years, its long-lasting aesthetic results and excellent wear rates are a testament to the reliability and durability of the composite. Herculite maximizes versatility with its 38 opacities and offers a solution for each of your clinical cases with syringes and disposable forms.',
         'hc.img':          'Herculite Classic composite (Kerr)',
 
+        /* --- Nexcomp LC Nano-Hybrid Composite --- */
+        'nc.title':        'Nexcomp',
+        'nc.tag':          'LC Nano-Hybrid Composite · syringe 4g · Made in Korea',
+        'nc.adv':          'Advantages',
+        'nc.a1':           'Low 1.6% shrinkage for superior marginal integrity, various shades',
+        'nc.a2':           'Filled with 40 nano-sized filler for excellent polishability',
+        'nc.a3':           'Optimal handling – excellent sculptability for restoring natural shape and function',
+        'nc.a4':           'Non-slumping, non-sticky',
+        'nc.app':          'Applications',
+        'nc.p1':           'Class I, II, III, IV, V restorations',
+        'nc.p2':           'Diastema closures',
+        'nc.p3':           'Direct veneers',
+        'nc.p4':           'Composite and porcelain repairs',
+        'nc.img':          'Nexcomp LC nano-hybrid composite',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -289,6 +304,21 @@
         'hc.kit':          'محتوى الكيت: 5 سرنجات مينا بوزن 5 جم (1×A1، 2×A2، 1×A3، 1×B1)؛ سرنجتان من جل الحفر (3 مل)',
         'hc.p1':           'Herculite Classic هو كمبوزيت ميكروهايبرد تم تطويره باستخدام مقياس ألوان Vita®. بفضل خصائصه التطبيقية الفائقة، يمكنك بسهولة إجراء التشكيل التشريحي باستخدام Herculite Classic. إن الفعالية السريرية المثبتة لهذا الكمبوزيت لأكثر من 15 عامًا، ونتائجه الجمالية طويلة الأمد ومعدلات تآكله الممتازة، هي دليل على موثوقيته ومتانته. يزيد Herculite من مرونته بـ 38 درجة لون، ويقدم حلًا لكل حالة سريرية في صورة سرنجات وعبوات جاهزة.',
         'hc.img':          'كمبوزيت Herculite Classic (Kerr)',
+
+        /* --- Nexcomp LC نانو-هايبرد --- */
+        'nc.title':        'Nexcomp',
+        'nc.tag':          'كمبوزيت LC نانو-هايبرد · سرنجة 4 جم · صناعة كورية',
+        'nc.adv':          'المميزات',
+        'nc.a1':           'انكماش منخفض بنسبة 1.6% لسلامة حواف فائقة ودرجات لون متعددة',
+        'nc.a2':           'معبأ بـ 40 من الحشوات النانوية لقابلية صقل ممتازة',
+        'nc.a3':           'تعامل مثالي – قابلية تشكيل ممتازة لاستعادة الشكل والوظيفة الطبيعية',
+        'nc.a4':           'لا يترهل ولا يلتصق',
+        'nc.app':          'الاستخدامات',
+        'nc.p1':           'حشوات الفئات I وII وIII وIV وV',
+        'nc.p2':           'إغلاق الفراغات بين الأسنان',
+        'nc.p3':           'قشور مباشرة (فينير)',
+        'nc.p4':           'إصلاحات الكمبوزيت والبورسلين',
+        'nc.img':          'كمبوزيت Nexcomp LC نانو-هايبرد',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
