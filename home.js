@@ -553,3 +553,41 @@ if (window.SD) {
   };
   syncCatLabels();   /* in case the page booted straight into Arabic */
 }
+
+/* ============================================================
+   COMPOSITE "KNOW MORE"  -  each composite is a card showing a
+   photo and name only; pressing the card's button unfolds that
+   card's full details (and folds it again on the next press).
+   ============================================================ */
+(function () {
+  const cards = document.querySelectorAll('.comp-card');
+  if (!cards.length) return;
+
+  function syncLabel(card, btn) {
+    const label = btn.querySelector('[data-i18n]');
+    const open = card.classList.contains('open');
+    if (label && window.SD && SD.t) label.textContent = SD.t(open ? 'comp.less' : 'comp.more');
+  }
+
+  cards.forEach(function (card) {
+    const btn = card.querySelector('.comp-more');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      card.classList.toggle('open');
+      btn.setAttribute('aria-expanded', card.classList.contains('open') ? 'true' : 'false');
+      syncLabel(card, btn);
+    });
+  });
+
+  /* keep "Know more / Show less" labels in the new language */
+  if (window.SD) {
+    const prev = window.SD.onLangChange;
+    window.SD.onLangChange = function () {
+      if (typeof prev === 'function') prev();
+      cards.forEach(function (card) {
+        const btn = card.querySelector('.comp-more');
+        if (btn) syncLabel(card, btn);
+      });
+    };
+  }
+})();

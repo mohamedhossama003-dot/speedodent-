@@ -698,36 +698,116 @@
             gap: 18px;
         }
 
-        /* ---- product row ---- */
-        .prod-row {
+        /* ---- composite showcase: photo + name, "Know more" unfolds ---- */
+        .comp-row {
             display: grid;
-            grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
-            gap: 18px 26px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
             align-items: start;
+        }
+
+        .comp-card {
+            display: flex;
+            flex-direction: column;
             background: var(--surface-soft);
             border: 1px solid var(--border);
             border-radius: 18px;
-            padding: 20px;
+            padding: 16px;
             box-shadow: var(--shadow);
         }
 
-        .prod-thumb {
-            min-width: 0;
+        .comp-card-media {
+            border-radius: 14px;
+            overflow: hidden;
+            line-height: 0;
+            border: 1px solid rgba(199, 203, 209, 0.14);
+            background: var(--primary-soft);
         }
 
-        .prod-thumb .card-photo + .card-photo {
-            margin-top: 12px;
+        .comp-card-media .card-photo {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            cursor: default;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
         }
 
-        .prod-info {
-            min-width: 0;
+        .comp-card-media .card-photo:hover,
+        .comp-card-media .card-photo:focus-visible {
+            transform: none;
+            border-color: transparent;
+            box-shadow: none;
+            outline-offset: -3px;
         }
 
-        .prod-info h4 {
-            font-size: 1.16rem;
+        .comp-card-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-top: 14px;
+        }
+
+        .comp-card-head h4 {
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--dark);
-            margin-bottom: 6px;
+            margin: 0;
+        }
+
+        .comp-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font: inherit;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--primary);
+            background: var(--primary-soft);
+            border: 1px solid rgba(199, 203, 209, 0.22);
+            border-radius: 999px;
+            padding: 8px 14px;
+            cursor: pointer;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+        }
+
+        .comp-more:hover {
+            border-color: rgba(199, 203, 209, 0.55);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+            transform: translateY(-1px);
+        }
+
+        .comp-chev {
+            width: 14px;
+            height: 14px;
+            flex: none;
+            transition: transform 0.25s ease;
+        }
+
+        .comp-card.open .comp-more .comp-chev {
+            transform: rotate(180deg);
+        }
+
+        .comp-details {
+            display: none;
+            padding-top: 16px;
+            margin-top: 14px;
+            border-top: 1px dashed rgba(199, 203, 209, 0.28);
+        }
+
+        .comp-card.open .comp-details {
+            display: block;
+            animation: compFade 0.28s ease;
+        }
+
+        @keyframes compFade {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
 
         .prod-tag {
@@ -781,16 +861,8 @@
             text-align: center;
         }
 
-        /* ---- row description (expands under its row) ---- */
-        .prod-desc {
-            display: block;
-            grid-column: 1 / -1;
-            padding-top: 18px;
-            margin-top: 18px;
-            border-top: 1px dashed rgba(199, 203, 209, 0.28);
-        }
-
-        .prod-desc p {
+        /* ---- description details inside a card ---- */
+        .comp-details p {
             font-size: 0.95rem;
             line-height: 1.85;
             color: var(--muted);
@@ -798,7 +870,7 @@
             text-align: start;
         }
 
-        .prod-desc h5 {
+        .comp-details h5 {
             font-size: 0.98rem;
             font-weight: 700;
             color: var(--silver);
@@ -893,19 +965,8 @@
         }
 
         @media (max-width: 768px) {
-            .prod-row {
+            .comp-row {
                 grid-template-columns: 1fr;
-                gap: 16px;
-            }
-
-            .prod-thumb {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 12px;
-            }
-
-            .prod-thumb .card-photo + .card-photo {
-                margin-top: 0;
             }
 
             .pd-cols {
