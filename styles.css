@@ -701,8 +701,8 @@
         /* ---- composite showcase: photo + name, "Know more" unfolds ---- */
         .comp-row {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 18px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
             align-items: start;
         }
 
@@ -712,7 +712,7 @@
             background: var(--surface-soft);
             border: 1px solid var(--border);
             border-radius: 18px;
-            padding: 16px;
+            padding: 13px;
             box-shadow: var(--shadow);
         }
 
@@ -898,75 +898,6 @@
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
         }
 
-        /* ---- featured product inside the gallery (EZ-Shine: photo + info under it) ---- */
-        .comp-gallery-feat {
-            grid-column: 1 / -1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 14px;
-            background: var(--surface-soft);
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 18px;
-            box-shadow: var(--shadow);
-        }
-
-        .comp-gallery-feat-photo {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 14px;
-            overflow: hidden;
-            line-height: 0;
-            border: 1px solid rgba(199, 203, 209, 0.14);
-            background: var(--primary-soft);
-        }
-
-        .comp-gallery-feat-photo .card-photo {
-            display: block;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 4 / 3;
-            object-fit: cover;
-            cursor: default;
-            border: none;
-            border-radius: 0;
-            box-shadow: none;
-        }
-
-        .comp-gallery-feat-caption {
-            width: 100%;
-            max-width: 620px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .comp-gallery-feat-caption h4 {
-            font-size: 1.15rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin: 0 0 12px;
-            text-align: center;
-        }
-
-        .comp-gallery-feat .prod-actions {
-            justify-content: center;
-        }
-
-        .comp-gallery-feat .comp-details {
-            width: 100%;
-        }
-
-        .comp-gallery-feat.open .comp-more .comp-chev {
-            transform: rotate(180deg);
-        }
-
-        .comp-gallery-feat.open .comp-details {
-            display: block;
-            animation: compFade 0.28s ease;
-        }
-
         /* ---- description details inside a card ---- */
         .comp-details p {
             font-size: 0.95rem;
@@ -985,7 +916,7 @@
 
         .pd-cols {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
             gap: 22px 28px;
             margin: 18px 0 22px;
         }
@@ -1070,11 +1001,19 @@
             opacity: 0.5;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1080px) {
+            .comp-row {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
             .comp-row {
                 grid-template-columns: 1fr;
             }
+        }
 
+        @media (max-width: 768px) {
             .pd-cols {
                 grid-template-columns: 1fr;
                 gap: 18px;
