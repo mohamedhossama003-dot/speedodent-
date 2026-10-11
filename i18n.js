@@ -175,6 +175,12 @@
         'an.cure':         'Depth of cure: 2.5 mm (10 seconds)',
         'an.img':          'Any-Com LC nano-hybrid composite syringe',
 
+        /* --- Alpha-Flow Flowable Composite --- */
+        'al.title':        'Alpha-Flow',
+        'al.tag':          'Flow Composite · Syringe 2g · Made in USA',
+        'al.p1':           'Flow composite used as a base liner under composite restoration.',
+        'al.img':          'Alpha-Flow flowable composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -361,6 +367,12 @@
         'an.a8':           'حشوات الكمبوزيت (Inlays)',
         'an.cure':         'عمق المعالجة: 2.5 مم (10 ثوانٍ)',
         'an.img':          'كمبوزيت Any-Com نانو-هايبرد',
+
+        /* --- Alpha-Flow كمبوزيت سائل --- */
+        'al.title':        'Alpha-Flow',
+        'al.tag':          'كمبوزيت سائل · سرنجة 2 جم · صناعة أمريكية',
+        'al.p1':           'كمبوزيت سائل يُستخدم كطبقة أساس (Liner) أسفل الحشوات الكمبوزيتية.',
+        'al.img':          'كمبوزيت Alpha-Flow السائل',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
