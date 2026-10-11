@@ -861,6 +861,43 @@
             text-align: center;
         }
 
+        /* ---- composite photo gallery ---- */
+        .comp-gallery {
+            margin-top: 2px;
+        }
+
+        .comp-gallery-title {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--silver);
+            margin: 0 0 12px;
+        }
+
+        .comp-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .comp-gallery-grid .card-photo {
+            border-radius: 12px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            cursor: default;
+            border-color: rgba(199, 203, 209, 0.16);
+            box-shadow: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .comp-gallery-grid .card-photo:hover,
+        .comp-gallery-grid .card-photo:focus-visible {
+            transform: translateY(-2px);
+            border-color: rgba(199, 203, 209, 0.55);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
+        }
+
         /* ---- description details inside a card ---- */
         .comp-details p {
             font-size: 0.95rem;
