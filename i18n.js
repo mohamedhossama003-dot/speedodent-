@@ -154,6 +154,12 @@
         'nc.p4':           'Composite and porcelain repairs',
         'nc.img':          'Nexcomp LC nano-hybrid composite',
 
+        /* --- Nexcomp Flow Nano-Hybrid Flowable Composite --- */
+        'nf.title':        'Nexcomp Flow',
+        'nf.tag':          'Nano-Hybrid Flowable Composite Resin',
+        'nf.p1':           'Nano-Hybrid Flowable Composite Resin, syringe 2g × 2, made in Korea.',
+        'nf.img':          'Nexcomp Flow nano-hybrid flowable composite',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -319,6 +325,12 @@
         'nc.p3':           'قشور مباشرة (فينير)',
         'nc.p4':           'إصلاحات الكمبوزيت والبورسلين',
         'nc.img':          'كمبوزيت Nexcomp LC نانو-هايبرد',
+
+        /* --- Nexcomp Flow راتنج نانو-هايبرد سائل --- */
+        'nf.title':        'Nexcomp Flow',
+        'nf.tag':          'راتنج كمبوزيت نانو-هايبرد سائل',
+        'nf.p1':           'راتنج كمبوزيت نانو-هايبرد سائل، سرنجة 2 جم × 2، صناعة كورية.',
+        'nf.img':          'كمبوزيت Nexcomp Flow نانو-هايبرد السائل',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
