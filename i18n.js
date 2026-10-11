@@ -160,6 +160,21 @@
         'nf.p1':           'Nano-Hybrid Flowable Composite Resin, syringe 2g × 2, made in Korea.',
         'nf.img':          'Nexcomp Flow nano-hybrid flowable composite',
 
+        /* --- Any-Com Nano-Hybrid Zirconium Composite --- */
+        'an.title':        'Any-Com',
+        'an.tag':          'LC Nano-Hybrid Composite · syringe 4g · Made in Korea',
+        'an.app':          'Applications',
+        'an.a1':           'Class I ~ V fillings',
+        'an.a2':           'Reconstruction of traumatically affected anterior',
+        'an.a3':           'Correction of shape and shade for better aesthetic appearance',
+        'an.a4':           'Locking, splinting of loose anterior',
+        'an.a5':           'Repairing veneer',
+        'an.a6':           'Filling deciduous teeth',
+        'an.a7':           'Core build-up under crowns',
+        'an.a8':           'Composite inlays',
+        'an.cure':         'Depth of cure: 2.5 mm (10 seconds)',
+        'an.img':          'Any-Com LC nano-hybrid composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -331,6 +346,21 @@
         'nf.tag':          'راتنج كمبوزيت نانو-هايبرد سائل',
         'nf.p1':           'راتنج كمبوزيت نانو-هايبرد سائل، سرنجة 2 جم × 2، صناعة كورية.',
         'nf.img':          'كمبوزيت Nexcomp Flow نانو-هايبرد السائل',
+
+        /* --- Any-Com كمبوزيت نانو-هايبرد زركونيوم --- */
+        'an.title':        'Any-Com',
+        'an.tag':          'كمبوزيت نانو-هايبرد · سرنجة 4 جم · صناعة كورية',
+        'an.app':          'الاستخدامات',
+        'an.a1':           'حشوات الفئة I ~ V',
+        'an.a2':           'إعادة بناء الأسنان الأمامية المتأثرة بالصدمات',
+        'an.a3':           'تصحيح الشكل واللون للحصول على مظهر جمالي أفضل',
+        'an.a4':           'تثبيت وتجبير الأسنان الأمامية المتحركة',
+        'an.a5':           'إصلاح القشور (الفينير)',
+        'an.a6':           'حشو الأسنان اللبنية',
+        'an.a7':           'بناء الدعامة (Core) أسفل التيجان',
+        'an.a8':           'حشوات الكمبوزيت (Inlays)',
+        'an.cure':         'عمق المعالجة: 2.5 مم (10 ثوانٍ)',
+        'an.img':          'كمبوزيت Any-Com نانو-هايبرد',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
