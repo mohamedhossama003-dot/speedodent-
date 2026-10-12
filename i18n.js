@@ -301,16 +301,16 @@
         'ns.i2':           'Indirect fabrication of inlays, onlays',
         'ns.img':          'Neo Spectra ST nano-ceramic universal composite',
 
-        /* --- ES Flow nano-hybrid flowable composite --- */
-        'ef.title':        'ES Flow',
+        /* --- XS Flow nano-hybrid flowable composite --- */
+        'ef.title':        'XS Flow',
         'ef.tag':          'Flowable Composite · Syringe 2g × 2 · Made in Korea',
-        'ef.p1':           'ES Flow is a light-cured, radiopaque nano-hybrid flowable composite, supplied as 2 × 2 g syringes.',
+        'ef.p1':           'XS Flow is a light-cured, radiopaque nano-hybrid flowable composite, supplied as 2 × 2 g syringes.',
         'ef.hi':           'Highlights',
         'ef.h1':           'Nano-hybrid flowable composite',
         'ef.h2':           'Light-cured and radiopaque',
         'ef.h3':           '2 × 2 g syringes',
         'ef.h4':           'Available in VITA shades A1, A2, A3, A3.5 and B2',
-        'ef.img':          'ES Flow nano-hybrid flowable composite syringe',
+        'ef.img':          'XS Flow nano-hybrid flowable composite syringe',
 
         /* --- CharmFil Flow flowable composite --- */
         'cf.title':        'CharmFil Flow',
@@ -636,16 +636,16 @@
         'ns.i2':           'التصنيع غير المباشر للحشوات (Inlays) و Onlays',
         'ns.img':          'كمبوزيت Neo Spectra ST نانو-سيراميك',
 
-        /* --- ES Flow كمبوزيت سائل نانو-هجين --- */
-        'ef.title':        'ES Flow',
+        /* --- XS Flow كمبوزيت سائل نانو-هجين --- */
+        'ef.title':        'XS Flow',
         'ef.tag':          'كمبوزيت سائل · سرنجة 2 جم × 2 · صناعة كورية',
-        'ef.p1':           'ES Flow كمبوزيت سائل نانو-هجين معالج بالضوء وعالي العتامة للأشعة، متوفر في سرنجتين 2 جم.',
+        'ef.p1':           'XS Flow كمبوزيت سائل نانو-هجين معالج بالضوء وعالي العتامة للأشعة، متوفر في سرنجتين 2 جم.',
         'ef.hi':           'أبرز المزايا',
         'ef.h1':           'كمبوزيت سائل نانو-هجين',
         'ef.h2':           'معالج بالضوء وعالي العتامة للأشعة',
         'ef.h3':           'سرنجتان 2 جم',
         'ef.h4':           'متوفر بدرجات VITA: A1، A2، A3، A3.5، B2',
-        'ef.img':          'كمبوزيت ES Flow السائل',
+        'ef.img':          'كمبوزيت XS Flow السائل',
 
         /* --- CharmFil Flow كمبوزيت سائل --- */
         'cf.title':        'CharmFil Flow',
