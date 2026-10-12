@@ -312,6 +312,17 @@
         'ef.h4':           'Available in VITA shades A1, A2, A3, A3.5 and B2',
         'ef.img':          'ES Flow nano-hybrid flowable composite syringe',
 
+        /* --- CharmFil Flow flowable composite --- */
+        'cf.title':        'CharmFil Flow',
+        'cf.tag':          'Flow Composite · Syringe 2g × 2 · Made in Korea',
+        'cf.p1':           'CharmFil Flow is a light-cured flowable composite resin that enhances physical properties such as flowability and elasticity, making it easy to handle.',
+        'cf.hi':           'Highlights',
+        'cf.h1':           'Light-cured flowable composite resin',
+        'cf.h2':           'Enhanced flowability and elasticity',
+        'cf.h3':           'Ideal for small cavity fills and cervical restorations',
+        'cf.h4':           '2 × 2 g syringes',
+        'cf.img':          'CharmFil Flow light-cured flowable composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -635,6 +646,17 @@
         'ef.h3':           'سرنجتان 2 جم',
         'ef.h4':           'متوفر بدرجات VITA: A1، A2، A3، A3.5، B2',
         'ef.img':          'كمبوزيت ES Flow السائل',
+
+        /* --- CharmFil Flow كمبوزيت سائل --- */
+        'cf.title':        'CharmFil Flow',
+        'cf.tag':          'كمبوزيت سائل · سرنجة 2 جم × 2 · صناعة كورية',
+        'cf.p1':           'CharmFil Flow كمبوزيت سائل معالج بالضوء يعزّز خصائص فيزيائية مثل السيولة والمرونة، مما يسهّل التعامل معه.',
+        'cf.hi':           'أبرز المزايا',
+        'cf.h1':           'كمبوزيت سائل معالج بالضوء',
+        'cf.h2':           'سيولة ومرونة مُعزّزتان',
+        'cf.h3':           'مثالي للحشوات الصغيرة وترميمات عنق السن',
+        'cf.h4':           'سرنجتان 2 جم',
+        'cf.img':          'كمبوزيت CharmFil Flow السائل',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
