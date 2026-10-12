@@ -261,6 +261,18 @@
         'bn.r4':           'Duo Shade concept for easy colour selection and natural aesthetics',
         'bn.img':          'BRILLIANT NG universal composite syringe',
 
+        /* --- TMR Z FILL 10 fluoride-releasing nanocomposite --- */
+        'zf.title':        'TMR Z FILL 10',
+        'zf.tag':          'Universal Nanocomposite with Fluoride',
+        'zf.p1':           'TMR Z FILL 10 achieves both a sustained fluoride-release property and strength.',
+        'zf.p2':           'Outstanding usability: Universal is easily releasable from a spatula while its viscosity allows it to stretch smoothly. Flow and Low Flow have appropriate flowability, making them easy to fill or place as desired.',
+        'zf.hi':           'Highlights',
+        'zf.h1':           'Sustained fluoride release combined with strength',
+        'zf.h2':           'Nanocomposite with fluoride',
+        'zf.h3':           'Easily releasable from a spatula, with a smooth stretch',
+        'zf.h4':           'Available as Universal, Flow and Low Flow',
+        'zf.img':          'TMR Z FILL 10 fluoride-releasing nanocomposite',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -533,6 +545,18 @@
         'bn.r3':           'مادة ثابتة وثيروتروبية تتدفق بالضغط لتطبيق دقيق',
         'bn.r4':           'مفهوم Duo Shade لاختيار لون سهل ومظهر طبيعي',
         'bn.img':          'كمبوزيت BRILLIANT NG السويسري',
+
+        /* --- TMR Z FILL 10 نانو-كمبوزيت مع الفلورايد --- */
+        'zf.title':        'TMR Z FILL 10',
+        'zf.tag':          'نانو-كمبوزيت عالمي يحتوي على الفلورايد',
+        'zf.p1':           'TMR Z FILL 10 يحقق خاصية الإطلاق المستمر للفلورايد مع القوة.',
+        'zf.p2':           'سهولة استخدام فائقة: النوع العالمي يُفصل بسهولة عن السباتولا، ولزوجته تجعله يتمدد بسلاسة. كما أن Flow و Low Flow لهما سيولة مناسبة، مما يسهّل الحشو أو التطبيق حسب الرغبة.',
+        'zf.hi':           'أبرز المزايا',
+        'zf.h1':           'إطلاق مستمر للفلورايد مع القوة',
+        'zf.h2':           'نانو-كمبوزيت يحتوي على الفلورايد',
+        'zf.h3':           'يُفصل بسهولة عن السباتولا ويتمدد بسلاسة',
+        'zf.h4':           'متوفر بأنواع Universal و Flow و Low Flow',
+        'zf.img':          'نانو-كمبوزيت TMR Z FILL 10 مع الفلورايد',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
