@@ -375,6 +375,28 @@
         'ct.h3':           'Made in Switzerland',
         'ct.img':          'Colltin-Flow flowable composite syringe',
 
+        /* --- ESTELITE Alpha universal composite (Tokuyama) --- */
+        'ea.title':        'ESTELITE Alpha',
+        'ea.tag':          'Supra-Nano Spherical Filler · Universal Composite',
+        'ea.p1':           'ESTELITE Alpha recreates teeth very naturally, blending with surrounding teeth using only 4 basic shades and 2 opalescent shades in most cases, and delivers a very smooth surface with superior gloss after easy polishing.',
+        'ea.p2':           'These features are made possible by its Supra-Nano Spherical Filler with a controlled refractive index.',
+        'ea.ben':          'Benefits',
+        'ea.b1':           'Outstanding polishability',
+        'ea.b2':           'High gloss retention over time',
+        'ea.b3':           'Wide shade matching range (Chameleon effect)',
+        'ea.b4':           'High wear resistance',
+        'ea.b5':           'Low wear to opposing teeth',
+        'ea.ind':          'Indications',
+        'ea.i1':           'Anterior and posterior restorations',
+        'ea.i2':           'Composite veneer',
+        'ea.i3':           'Diastema closure',
+        'ea.i4':           'Composite / porcelain repair',
+        'ea.pkg':          'Product package',
+        'ea.pg1':          '2 syringes (3.8 g) of A2',
+        'ea.pg2':          '1 syringe (3.8 g) of A3',
+        'ea.pg3':          '1 syringe OA2 (opacious)',
+        'ea.img':          'ESTELITE Alpha universal composite',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -761,6 +783,28 @@
         'ct.h2':           'سرنجة 2.3 جم',
         'ct.h3':           'صناعة سويسرية',
         'ct.img':          'كمبوزيت Colltin-Flow السائل',
+
+        /* --- ESTELITE Alpha كمبوزيت عالمي (Tokuyama) --- */
+        'ea.title':        'ESTELITE Alpha',
+        'ea.tag':          'Supra-Nano Spherical Filler · كمبوزيت عالمي',
+        'ea.p1':           'يعيد ESTELITE Alpha خلق الأسنان بشكل طبيعي جدًا، مندمجًا مع الأسنان المجاورة باستخدام 4 درجات أساسية ودرجتين شفافتين (Opalescent) في معظم الحالات، ويعطي سطحًا ناعمًا جدًا بلمعان فائق بعد تلميع سهل.',
+        'ea.p2':           'هذه الخصائص ممكنة بفضل حشواته النانوية الكروية فائقة الصغر (Supra-Nano Spherical Filler) ذات معامل انكسار مضبوط.',
+        'ea.ben':          'المزايا',
+        'ea.b1':           'قابلية تلميع استثنائية',
+        'ea.b2':           'ثبات لمعان عالي مع الوقت',
+        'ea.b3':           'نطاق مطابقة واسع لتدرجات الأسنان (تأثير الحرباء)',
+        'ea.b4':           'مقاومة تآكل عالية',
+        'ea.b5':           'تآكل منخفض للأسنان المقابلة',
+        'ea.ind':          'الاستخدامات',
+        'ea.i1':           'ترميمات أمامية وخلفية',
+        'ea.i2':           'قشرة كمبوزيت',
+        'ea.i3':           'إغلاق الفراغات (Diastema)',
+        'ea.i4':           'إصلاح كمبوزيت / بورسلين',
+        'ea.pkg':          'محتويات العبوة',
+        'ea.pg1':          'سرنجتان (3.8 جم) بدرجة A2',
+        'ea.pg2':          'سرنجة واحدة (3.8 جم) بدرجة A3',
+        'ea.pg3':          'سرنجة واحدة OA2 (معتمة)',
+        'ea.img':          'كمبوزيت ESTELITE Alpha العالمي',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
