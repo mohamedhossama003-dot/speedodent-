@@ -200,6 +200,27 @@
         'ad.p1':           'Light-cure micro-hybrid composite syringe.',
         'ad.img':          'Alpha-Dent light-cure micro-hybrid composite syringe',
 
+        /* --- NOVA COMPO-HF flowable composite --- */
+        'nov.title':       'NOVA COMPO-HF',
+        'nov.tag':         'Flowable Composite · Syringe 2g × 2 · Made in Turkey',
+        'nov.p1':          'NOVA COMPO-HF is a light-curing, radiopaque flowable composite. Suitable for use as a cavity liner and for any kind of small cavities.',
+        'nov.adv':         'Advantages',
+        'nov.a1':          'High radiopacity',
+        'nov.a2':          'Excellent wetting behaviour and consistency for all composite indications',
+        'nov.a3':          'Use as a liner in Class I and II cavities and as a restorative material for filling small cavities and even Class V cavities',
+        'nov.a4':          'Less shrinkage and minimized stress',
+        'nov.ind':         'Indications',
+        'nov.i1':          'As initial layer under Class I to V restorations',
+        'nov.i2':          'Anterior restorations (Classes III, IV)',
+        'nov.i3':          'Class V restorations (cervical caries, root erosion, wedge-shaped defects)',
+        'nov.i4':          'Small restorations of all types',
+        'nov.i5':          'Extended fissure sealing',
+        'nov.i6':          'Splinting of mobile teeth',
+        'nov.i7':          'Blocking out of undercuts',
+        'nov.i8':          'Adhesive cementation of indirect light and ceramic restorations',
+        'nov.i9':          'Repair of composite / ceramic veneers',
+        'nov.img':         'NOVA COMPO-HF flowable composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -411,6 +432,27 @@
         'ad.tag':          'كمبوزيت مايكرو-هايبرد معالج بالضوء · سرنجة 4.5 جم · صناعة أمريكية',
         'ad.p1':           'كمبوزيت مايكرو-هايبرد معالج بالضوء في سرنجة.',
         'ad.img':          'كمبوزيت Alpha-Dent مايكرو-هايبرد',
+
+        /* --- NOVA COMPO-HF كمبوزيت سائل --- */
+        'nov.title':       'NOVA COMPO-HF',
+        'nov.tag':         'كمبوزيت سائل · سرنجة 2 جم × 2 · صناعة تركية',
+        'nov.p1':          'NOVA COMPO-HF كمبوزيت سائل معالج بالضوء وعالي العتامة للأشعة. مناسب للاستخدام كطبقة أساس ولجميع الحشوات الصغيرة.',
+        'nov.adv':         'المزايا',
+        'nov.a1':          'عتامة عالية للأشعة',
+        'nov.a2':          'سلوك ترطيب واتساق ممتاز لجميع استخدامات الكمبوزيت',
+        'nov.a3':          'يُستخدم كطبقة أساس في تجاويف الفئة I و II وكمادة ترميم لملء التجاويف الصغيرة وحتى تجاويف الفئة V',
+        'nov.a4':          'انكماش أقل وإجهاد مُقلَّل',
+        'nov.ind':         'الاستخدامات',
+        'nov.i1':          'طبقة أولية أسفل ترميمات الفئات I إلى V',
+        'nov.i2':          'ترميمات الأسنان الأمامية (الفئات III و IV)',
+        'nov.i3':          'ترميمات الفئة V (تسوس عنقي، تآكل الجذر، عيوب على شكل إسفين)',
+        'nov.i4':          'ترميمات صغيرة من جميع الأنواع',
+        'nov.i5':          'سد الشقوق الممتد',
+        'nov.i6':          'تجبير الأسنان المتحركة',
+        'nov.i7':          'إغلاق التجاويف المنحدرة (Blocking out of undercuts)',
+        'nov.i8':          'الإلصاق اللاصق للترميمات غير المباشرة الضوئية والسيراميكية',
+        'nov.i9':          'إصلاح قشور الكمبوزيت / السيراميك',
+        'nov.img':         'كمبوزيت NOVA COMPO-HF السائل',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
