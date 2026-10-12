@@ -323,6 +323,30 @@
         'cf.h4':           '2 × 2 g syringes',
         'cf.img':          'CharmFil Flow light-cured flowable composite syringe',
 
+        /* --- XS Composite LC nano-hybrid composite --- */
+        'xc.title':        'XS Composite',
+        'xc.tag':          'LC Nano-Hybrid Composite · Syringe 4g · Made in Korea',
+        'xc.p1':           'Light-cured nano-hybrid composite, supplied in a 4 g syringe.',
+        'xc.hi':           'Highlights',
+        'xc.h1':           'LC nano-hybrid composite',
+        'xc.h2':           '4 g syringe',
+        'xc.h3':           'Made in Korea',
+        'xc.img':          'XS Composite LC nano-hybrid composite syringe',
+
+        /* --- Beautifil II LS universal composite with Giomer --- */
+        'bi.title':        'Beautifil II LS',
+        'bi.tag':          'Universal Composite · Giomer Technology',
+        'bi.p1':           'Indicated for all classes of restorations (I–V), Beautifil II LS is a firm but easy-handling, stackable, non-sticky universal composite formulated to minimize polymerization shrinkage and resultant shrinkage stress.',
+        'bi.p2':           'With superior durability and aesthetics, it is ideal for both anterior and posterior restorations, delivering predictable clinical efficacy and maximum performance.',
+        'bi.ft':           'Features',
+        'bi.f1':           'Award-winning handling — stackable and non-sticky',
+        'bi.f2':           'Polishes in an instant',
+        'bi.f3':           'Sustained fluoride release/recharge with bioactive Giomer technology',
+        'bi.f4':           'Great strength and high wear resistance',
+        'bi.f5':           'Tooth-like aesthetics with natural fluorescence and chameleon effect',
+        'bi.f6':           'Low volumetric shrinkage (0.85%) and shrinkage stress (2.72 MPa)',
+        'bi.img':          'Beautifil II LS universal composite with Giomer technology',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -657,6 +681,30 @@
         'cf.h3':           'مثالي للحشوات الصغيرة وترميمات عنق السن',
         'cf.h4':           'سرنجتان 2 جم',
         'cf.img':          'كمبوزيت CharmFil Flow السائل',
+
+        /* --- XS Composite كمبوزيت نانو-هجين --- */
+        'xc.title':        'XS Composite',
+        'xc.tag':          'كمبوزيت نانو-هجين معالج بالضوء · سرنجة 4 جم · صناعة كورية',
+        'xc.p1':           'كمبوزيت نانو-هجين معالج بالضوء، متوفر في سرنجة 4 جم.',
+        'xc.hi':           'أبرز المزايا',
+        'xc.h1':           'كمبوزيت نانو-هجين معالج بالضوء',
+        'xc.h2':           'سرنجة 4 جم',
+        'xc.h3':           'صناعة كورية',
+        'xc.img':          'كمبوزيت XS Composite نانو-هجين',
+
+        /* --- Beautifil II LS كمبوزيت عالمي بتقنية Giomer --- */
+        'bi.title':        'Beautifil II LS',
+        'bi.tag':          'كمبوزيت عالمي · تقنية Giomer',
+        'bi.p1':           'مخصص لجميع فئات الترميم (I–V)، Beautifil II LS كمبوزيت عالمي متماسك وسهل التعامل وقابل للتراكم وغير لاصق، مُصمّم لتقليل انكماش البلمرة وإجهاد الانكماش الناتج.',
+        'bi.p2':           'بمتانة وجمالية فائقتين، مثالي للترميمات الأمامية والخلفية، ويوفّر كفاءة سريرية موثوقة وأقصى أداء.',
+        'bi.ft':           'المزايا',
+        'bi.f1':           'تعامل حائز على جوائز — قابل للتراكم وغير لاصق',
+        'bi.f2':           'يلمع في لحظة',
+        'bi.f3':           'إطلاق/إعادة شحن فلورايد مستمر بتقنية Giomer الحيوية النشطة',
+        'bi.f4':           'قوة عالية ومقاومة تآكل عالية',
+        'bi.f5':           'جمالية شبيهة بالأسنان مع فلورة طبيعية وتأثير الحرباء (Chameleon)',
+        'bi.f6':           'انكماش حجمي منخفض (0.85%) وإجهاد انكماش (2.72 ميجاباسكال)',
+        'bi.img':          'كمبوزيت Beautifil II LS مع تقنية Giomer',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
