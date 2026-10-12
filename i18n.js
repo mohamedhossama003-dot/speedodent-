@@ -242,6 +242,25 @@
         'cl.a3':           'Sticks to the cavity, not to the instrument',
         'cl.img':          'Composan LCM micro-hybrid composite syringe',
 
+        /* --- BRILLIANT NG universal composite --- */
+        'bn.title':        'BRILLIANT NG',
+        'bn.tag':          'Universal Composite · Syringe 4g · Made in Switzerland',
+        'bn.p1':           'BRILLIANT NG is a universal composite aimed at simplifying the technique of application while achieving excellent aesthetic results.',
+        'bn.p2':           'The pre-polymerised particle filling plus a high nanometric particle content give optimum consistency for manipulation and modelling, a noticeable decrease in shrinkage and easily achievable high-gloss surfaces.',
+        'bn.p3':           'Its Duo Shade system yields two shades from the same syringe, simplifying colour selection and syringe inventory.',
+        'bn.hi':           'Highlights',
+        'bn.h1':           'Universal composite with a simplified application technique',
+        'bn.h2':           'Excellent aesthetic results and a natural blend (Chameleon Effect)',
+        'bn.h3':           'Optimum consistency for manipulation, packing and modelling',
+        'bn.h4':           'Reduced shrinkage and an easily achievable high-gloss finish',
+        'bn.h5':           'Duo Shade system — two shades from a single syringe',
+        'bn.rg':           'Range',
+        'bn.r1':           'Complemented by BRILLIANT Flow',
+        'bn.r2':           'Nanofilled radiopaque flowable composite',
+        'bn.r3':           'Stable, thixotropic material that flows under pressure for precise application',
+        'bn.r4':           'Duo Shade concept for easy colour selection and natural aesthetics',
+        'bn.img':          'BRILLIANT NG universal composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -495,6 +514,25 @@
         'cl.a2':           'قوام قابل للرص (Packable)',
         'cl.a3':           'يلتصق بالتجويف وليس بالأداة',
         'cl.img':          'كمبوزيت Composan LCM مايكرو-هايبرد',
+
+        /* --- BRILLIANT NG كمبوزيت عالمي --- */
+        'bn.title':        'BRILLIANT NG',
+        'bn.tag':          'كمبوزيت عالمي · سرنجة 4 جم · صناعة سويسرية',
+        'bn.p1':           'BRILLIANT NG كمبوزيت عالمي يهدف إلى تبسيط تقنية التطبيق مع تحقيق نتائج جمالية ممتازة.',
+        'bn.p2':           'حشو الجزيئات المُسبق البلمرة مع المحتوى العالي من الجزيئات النانومترية يمنح قوامًا مثاليًا للتشغيل والتشكيل، مع انخفاض ملحوظ في الانكماش وسهولة الحصول على أسطح عالية اللمعان.',
+        'bn.p3':           'نظام Duo Shade يتيح الحصول على درجتين لونيتين من نفس السرنجة، مما يبسّط اختيار اللون ومخزون السرنجات.',
+        'bn.hi':           'أبرز المزايا',
+        'bn.h1':           'كمبوزيت عالمي بتقنية تطبيق مبسّطة',
+        'bn.h2':           'نتائج جمالية ممتازة ومظهر طبيعي (تأثير الحرباء / Chameleon)',
+        'bn.h3':           'قوام مثالي للتشغيل والرص والتشكيل',
+        'bn.h4':           'انكماش أقل ولمعان نهائي عالٍ',
+        'bn.h5':           'نظام Duo Shade — درجتان من نفس السرنجة',
+        'bn.rg':           'المجموعة',
+        'bn.r1':           'مكمّل بـ BRILLIANT Flow',
+        'bn.r2':           'كمبوزيت سائل نانوي عالي العتامة للأشعة',
+        'bn.r3':           'مادة ثابتة وثيروتروبية تتدفق بالضغط لتطبيق دقيق',
+        'bn.r4':           'مفهوم Duo Shade لاختيار لون سهل ومظهر طبيعي',
+        'bn.img':          'كمبوزيت BRILLIANT NG السويسري',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
