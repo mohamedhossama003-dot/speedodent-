@@ -194,6 +194,12 @@
         'te.a5':           'Proven Ivoclar Vivadent technology and quality',
         'te.img':          'Te-Econom Plus hybrid composite',
 
+        /* --- Alpha-Dent Light Cure Composite --- */
+        'ad.title':        'Alpha-Dent',
+        'ad.tag':          'LC Micro-Hybrid Composite · Syringe 4.5g · Made in USA',
+        'ad.p1':           'Light-cure micro-hybrid composite syringe.',
+        'ad.img':          'Alpha-Dent light-cure micro-hybrid composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -399,6 +405,12 @@
         'te.a4':           'وقت عمل طويل',
         'te.a5':           'تقنية وجودة Ivoclar Vivadent المُثبتة',
         'te.img':          'كمبوزيت Te-Econom Plus الهجين',
+
+        /* --- Alpha-Dent كمبوزيت مايكرو-هايبرد --- */
+        'ad.title':        'Alpha-Dent',
+        'ad.tag':          'كمبوزيت مايكرو-هايبرد معالج بالضوء · سرنجة 4.5 جم · صناعة أمريكية',
+        'ad.p1':           'كمبوزيت مايكرو-هايبرد معالج بالضوء في سرنجة.',
+        'ad.img':          'كمبوزيت Alpha-Dent مايكرو-هايبرد',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
