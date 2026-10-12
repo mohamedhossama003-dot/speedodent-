@@ -221,6 +221,27 @@
         'nov.i9':          'Repair of composite / ceramic veneers',
         'nov.img':         'NOVA COMPO-HF flowable composite syringe',
 
+        /* --- Composan LCM micro-hybrid composite --- */
+        'cl.title':        'Composan LCM',
+        'cl.tag':          'LC Micro-Hybrid Composite · Syringe 4g · Made in Germany',
+        'cl.p1':           'Composan LCM is our universal light-curing micro-hybrid composite with a filler content of 76.5%. It is suitable for fillings in the anterior and the posterior area, as well as for the inlay technique.',
+        'cl.p2':           'The material offers excellent packability and outstanding physical properties, with high translucency, colour stability and excellent polishing.',
+        'cl.ind':          'Indications',
+        'cl.i1':           'Fillings of class I, II and V in the posterior area which are not occlusion bearing',
+        'cl.i2':           'Reconstruction of traumatically affected anteriors',
+        'cl.i3':           'Facing of discoloured anteriors',
+        'cl.i4':           'Colour and shape corrections for a better aesthetic appearance',
+        'cl.i5':           'Locking of loosened anteriors',
+        'cl.i6':           'Extended fissure sealing for molars and premolars',
+        'cl.i7':           'Repair of veneers',
+        'cl.i8':           'Core build-ups for crowns',
+        'cl.i9':           'Especially suitable for composite inlays',
+        'cl.adv':          'Advantages',
+        'cl.a1':           'Universal range of use due to the new type of fillers',
+        'cl.a2':           'Packable consistency',
+        'cl.a3':           'Sticks to the cavity, not to the instrument',
+        'cl.img':          'Composan LCM micro-hybrid composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -453,6 +474,27 @@
         'nov.i8':          'الإلصاق اللاصق للترميمات غير المباشرة الضوئية والسيراميكية',
         'nov.i9':          'إصلاح قشور الكمبوزيت / السيراميك',
         'nov.img':         'كمبوزيت NOVA COMPO-HF السائل',
+
+        /* --- Composan LCM كمبوزيت مايكرو-هايبرد --- */
+        'cl.title':        'Composan LCM',
+        'cl.tag':          'كمبوزيت مايكرو-هايبرد معالج بالضوء · سرنجة 4 جم · صناعة ألمانية',
+        'cl.p1':           'Composan LCM كمبوزيت مايكرو-هايبرد عالمي معالج بالضوء بنسبة حشو 76.5%. مناسب لحشوات المنطقة الأمامية والخلفية ولتقنية الحشوات غير المباشرة (Inlay).',
+        'cl.p2':           'يوفر المادة قابلية رص ممتازة وخصائص فيزيائية فائقة، مع شفافية عالية وثبات لوني وتلميع ممتاز.',
+        'cl.ind':          'الاستخدامات',
+        'cl.i1':           'حشوات الفئة I و II و V في المنطقة الخلفية غير الحاملة للإطباق',
+        'cl.i2':           'إعادة بناء الأسنان الأمامية المتأثرة بالصدمات',
+        'cl.i3':           'تغطية الأسنان الأمامية المتغيرة اللون',
+        'cl.i4':           'تصحيح اللون والشكل لمظهر جمالي أفضل',
+        'cl.i5':           'تثبيت الأسنان الأمامية المتراخية',
+        'cl.i6':           'سد الشقوق الممتد للطواحن والضواحك',
+        'cl.i7':           'إصلاح القشور (الفينير)',
+        'cl.i8':           'بناء الدعامة (Core) للتيجان',
+        'cl.i9':           'مناسب بشكل خاص لحشوات الكمبوزيت غير المباشرة (Inlays)',
+        'cl.adv':          'المزايا',
+        'cl.a1':           'مدى استخدام عالمي بفضل النوع الجديد من الحشوات',
+        'cl.a2':           'قوام قابل للرص (Packable)',
+        'cl.a3':           'يلتصق بالتجويف وليس بالأداة',
+        'cl.img':          'كمبوزيت Composan LCM مايكرو-هايبرد',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
