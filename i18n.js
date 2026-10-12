@@ -273,6 +273,19 @@
         'zf.h4':           'Available as Universal, Flow and Low Flow',
         'zf.img':          'TMR Z FILL 10 fluoride-releasing nanocomposite',
 
+        /* --- Any-Com Flow flowable composite --- */
+        'af.title':        'Any-Com Flow',
+        'af.tag':          'Flowable Composite · Syringe 2g · Made in Korea',
+        'af.p1':           'Light-cured, radiopaque hybrid composite material for the restorative treatment of anterior and posterior teeth.',
+        'af.ft':           'Features',
+        'af.f1':           'Non-slumping and not sticky',
+        'af.f2':           'Excellent physical properties',
+        'af.f3':           'Colour match to the VITA shade guide',
+        'af.f4':           'Less shrinkage (low 1.5%)',
+        'af.f5':           'Optimum handling',
+        'af.f6':           'Excellent sculptability for restoring natural shade and function',
+        'af.img':          'Any-Com Flow flowable composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -557,6 +570,19 @@
         'zf.h3':           'يُفصل بسهولة عن السباتولا ويتمدد بسلاسة',
         'zf.h4':           'متوفر بأنواع Universal و Flow و Low Flow',
         'zf.img':          'نانو-كمبوزيت TMR Z FILL 10 مع الفلورايد',
+
+        /* --- Any-Com Flow كمبوزيت سائل --- */
+        'af.title':        'Any-Com Flow',
+        'af.tag':          'كمبوزيت سائل · سرنجة 2 جم · صناعة كورية',
+        'af.p1':           'مادة كمبوزيت هجينة معالجة بالضوء وعالية العتامة للأشعة لعلاج ترميمي للأسنان الأمامية والخلفية.',
+        'af.ft':           'المزايا',
+        'af.f1':           'لا ينزلق وغير لاصق',
+        'af.f2':           'خصائص فيزيائية ممتازة',
+        'af.f3':           'مطابقة الألوان لدليل ألوان VITA',
+        'af.f4':           'انكماش أقل (منخفض 1.5%)',
+        'af.f5':           'تعامل مثالي',
+        'af.f6':           'قابلية تشكيل ممتازة لاستعادة اللون والوظيفة الطبيعية',
+        'af.img':          'كمبوزيت Any-Com Flow السائل',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
