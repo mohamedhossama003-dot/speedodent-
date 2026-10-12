@@ -286,6 +286,21 @@
         'af.f6':           'Excellent sculptability for restoring natural shade and function',
         'af.img':          'Any-Com Flow flowable composite syringe',
 
+        /* --- Neo Spectra ST nano-ceramic composite --- */
+        'ns.title':        'Neo Spectra ST',
+        'ns.tag':          'Nano-Ceramic Universal Composite · SphereTEC Filler',
+        'ns.p1':           'Neo Spectra ST is a nano-ceramic, light-cured, radiopaque, universal composite with novel SphereTEC filler technology, indicated for both direct and indirect restorations.',
+        'ns.p2':           'SphereTEC filler technology uses granulated spherical fillers combined with an optimised resin matrix system to elevate performance in handling, esthetics and longevity.',
+        'ns.hi':           'Highlights',
+        'ns.h1':           'Five universal CLOUD shades covering the full VITA 1 range',
+        'ns.h2':           'Preferred handling: LV (low-viscosity) or HV (high-viscosity), each non-sticky with excellent adaptation, sculptability and slump resistance',
+        'ns.h3':           'Simplified shading system — 5 universal CLOUD shades',
+        'ns.h4':           'Lasting aesthetics: fast and easy polishing with high stain resistance and proven durability',
+        'ns.ind':          'Indications',
+        'ns.i1':           'Direct restorations of all cavity classes in anterior and posterior teeth',
+        'ns.i2':           'Indirect fabrication of inlays, onlays',
+        'ns.img':          'Neo Spectra ST nano-ceramic universal composite',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -583,6 +598,21 @@
         'af.f5':           'تعامل مثالي',
         'af.f6':           'قابلية تشكيل ممتازة لاستعادة اللون والوظيفة الطبيعية',
         'af.img':          'كمبوزيت Any-Com Flow السائل',
+
+        /* --- Neo Spectra ST كمبوزيت نانو-سيراميك --- */
+        'ns.title':        'Neo Spectra ST',
+        'ns.tag':          'كمبوزيت نانو-سيراميك عالمي · تقنية حشو SphereTEC',
+        'ns.p1':           'Neo Spectra ST كمبوزيت نانو-سيراميك عالمي معالج بالضوء وعالي العتامة للأشعة بتقنية حشو SphereTEC المبتكرة، مخصص للترميمات المباشرة وغير المباشرة.',
+        'ns.p2':           'تقنية SphereTEC تستخدم حشوات كروية مُحبّبة مع نظام راتنجي مُحسّن لرفع الأداء في التعامل والجمالية والثبات.',
+        'ns.hi':           'أبرز المزايا',
+        'ns.h1':           'خمس درجات CLOUD عالمية تغطي كامل نطاق VITA 1',
+        'ns.h2':           'تعامل مفضّل: خيارات اللزوجة المنخفضة (LV) أو العالية (HV)، كلاهما غير لاصق مع تكيّف وتشكيل ممتازين ومقاومة للانزلاق (Slump)',
+        'ns.h3':           'نظام ألوان مبسّط — 5 درجات CLOUD عالمية',
+        'ns.h4':           'جمالية تدوم: تلميع سريع وسهل مع مقاومة عالية للتصبّغ ومتانة مثبتة',
+        'ns.ind':          'الاستخدامات',
+        'ns.i1':           'الترميمات المباشرة لجميع فئات التجاويف في الأسنان الأمامية والخلفية',
+        'ns.i2':           'التصنيع غير المباشر للحشوات (Inlays) و Onlays',
+        'ns.img':          'كمبوزيت Neo Spectra ST نانو-سيراميك',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
