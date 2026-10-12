@@ -347,6 +347,34 @@
         'bi.f6':           'Low volumetric shrinkage (0.85%) and shrinkage stress (2.72 MPa)',
         'bi.img':          'Beautifil II LS universal composite with Giomer technology',
 
+        /* --- OMNICHROMA BLOCKER opaque blocker for OMNICHROMA --- */
+        'ob.title':        'OMNICHROMA BLOCKER',
+        'ob.tag':          'Opaque Blocker for OMNICHROMA · Syringe 4g · Made in Japan',
+        'ob.p1':           'OMNICHROMA BLOCKER is an opaque blocker for OMNICHROMA — one color, every shade, every class! It eliminates time-consuming shade matching.',
+        'ob.ind':          'Indications',
+        'ob.i1':           'Preventing shade-matching interference in large Class III and Class IV restorations',
+        'ob.i2':           'Masking amalgam staining',
+        'ob.i3':           'Masking dark dentition and dentin',
+        'ob.i4':           'Reconstructing a highly opaque tooth',
+        'ob.about':        'About OMNICHROMA',
+        'ob.a1':           "World's first universal composite to shade-match any tooth color, from A1 to D4",
+        'ob.a2':           'Smart Chromatic Technology uses uniformly sized supra-nano spherical fillers to match all 16 VITA classical shades',
+        'ob.a3':           'Eliminates the shade-taking procedure and reduces composite inventories',
+        'ob.a4':           'Shades match even before and after bleaching',
+        'ob.a5':           'Low polymerization shrinkage with exceptional strength, wear resistance, handling and polishability',
+        'ob.a6':           'Indicated for all classes of direct restorations, diastema closure, and porcelain / composite repair',
+        'ob.img':          'OMNICHROMA BLOCKER opaque blocker',
+
+        /* --- Colltin-Flow flowable composite --- */
+        'ct.title':        'Colltin-Flow',
+        'ct.tag':          'Flowable Composite · Syringe 2.3g · Made in Switzerland',
+        'ct.p1':           'Colltin-Flow is a light-cured, radiopaque flowable composite supplied in a 2.3 g syringe, made in Switzerland.',
+        'ct.hi':           'Highlights',
+        'ct.h1':           'Flowable composite',
+        'ct.h2':           'Syringe 2.3 g',
+        'ct.h3':           'Made in Switzerland',
+        'ct.img':          'Colltin-Flow flowable composite syringe',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -705,6 +733,34 @@
         'bi.f5':           'جمالية شبيهة بالأسنان مع فلورة طبيعية وتأثير الحرباء (Chameleon)',
         'bi.f6':           'انكماش حجمي منخفض (0.85%) وإجهاد انكماش (2.72 ميجاباسكال)',
         'bi.img':          'كمبوزيت Beautifil II LS مع تقنية Giomer',
+
+        /* --- OMNICHROMA BLOCKER حاجب معتم لـ OMNICHROMA --- */
+        'ob.title':        'OMNICHROMA BLOCKER',
+        'ob.tag':          'حاجب معتم لـ OMNICHROMA · سرنجة 4 جم · صناعة يابانية',
+        'ob.p1':           'OMNICHROMA BLOCKER حاجب معتم لـ OMNICHROMA — لون واحد، كل الدرجات، كل الفئات! يلغي عملية اختيار اللون المستهلكة للوقت.',
+        'ob.ind':          'الاستخدامات',
+        'ob.i1':           'منع تعارض مطابقة اللون في الترميمات الكبيرة من الفئة III و IV',
+        'ob.i2':           'إخفاء تصبّغات الملغم',
+        'ob.i3':           'إخفاء العاج والأسنان الداكنة',
+        'ob.i4':           'إعادة بناء سن عالي العتامة',
+        'ob.about':        'عن OMNICHROMA',
+        'ob.a1':           'أول كمبوزيت عالمي في العالم يطابق لون أي سن من A1 إلى D4',
+        'ob.a2':           'تقنية Smart Chromatic بحشوات نانوية كروية متجانسة تطابق جميع درجات VITA الكلاسيكية الـ16',
+        'ob.a3':           'يلغي إجراء أخذ درجة اللون ويقلل مخزون الكمبوزيت',
+        'ob.a4':           'يطابق الدرجات حتى قبل وبعد التبييض',
+        'ob.a5':           'انكماش بلمرة منخفض مع قوة ومقاومة تآكل وتعامل وتلميع استثنائي',
+        'ob.a6':           'مناسب لجميع فئات الترميم المباشر وإغلاق الفراغات وإصلاح البورسلين/الكمبوزيت',
+        'ob.img':          'حاجب OMNICHROMA BLOCKER المعتم',
+
+        /* --- Colltin-Flow كمبوزيت سائل --- */
+        'ct.title':        'Colltin-Flow',
+        'ct.tag':          'كمبوزيت سائل · سرنجة 2.3 جم · صناعة سويسرية',
+        'ct.p1':           'Colltin-Flow كمبوزيت سائل معالج بالضوء ومعتم للأشعة، متوفر في سرنجة 2.3 جم، صناعة سويسرية.',
+        'ct.hi':           'أبرز المزايا',
+        'ct.h1':           'كمبوزيت سائل',
+        'ct.h2':           'سرنجة 2.3 جم',
+        'ct.h3':           'صناعة سويسرية',
+        'ct.img':          'كمبوزيت Colltin-Flow السائل',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
