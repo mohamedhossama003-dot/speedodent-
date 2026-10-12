@@ -181,6 +181,19 @@
         'al.p1':           'Flow composite used as a base liner under composite restoration.',
         'al.img':          'Alpha-Flow flowable composite syringe',
 
+        /* --- Te-Econom Plus hybrid composite --- */
+        'te.title':        'Te-Econom Plus',
+        'te.tag':          'Light-curing, radiopaque hybrid composite',
+        'te.ind':          'Indications',
+        'te.i1':           'Restorations of Classes I to V',
+        'te.adv':          'Advantages',
+        'te.a1':           'Excellent physical properties',
+        'te.a2':           'Good polishability',
+        'te.a3':           'High radiopacity',
+        'te.a4':           'Long working time',
+        'te.a5':           'Proven Ivoclar Vivadent technology and quality',
+        'te.img':          'Te-Econom Plus hybrid composite',
+
         'omni.img':        'OMNICHROMA universal composite',
 
         /* --- OMNICHROMA (inside the Restorative card) --- */
@@ -373,6 +386,19 @@
         'al.tag':          'كمبوزيت سائل · سرنجة 2 جم · صناعة أمريكية',
         'al.p1':           'كمبوزيت سائل يُستخدم كطبقة أساس (Liner) أسفل الحشوات الكمبوزيتية.',
         'al.img':          'كمبوزيت Alpha-Flow السائل',
+
+        /* --- Te-Econom Plus كمبوزيت هجين --- */
+        'te.title':        'Te-Econom Plus',
+        'te.tag':          'كمبوزيت هجين معالج بالضوء، عالي العتامة للأشعة',
+        'te.ind':          'دواعي الاستخدام',
+        'te.i1':           'ترميمات الفئات I إلى V',
+        'te.adv':          'المزايا',
+        'te.a1':           'خصائص فيزيائية ممتازة',
+        'te.a2':           'قابلية تلميع جيدة',
+        'te.a3':           'عتامة عالية للأشعة',
+        'te.a4':           'وقت عمل طويل',
+        'te.a5':           'تقنية وجودة Ivoclar Vivadent المُثبتة',
+        'te.img':          'كمبوزيت Te-Econom Plus الهجين',
 
         'omni.img':        'كومبوزيت OMNICHROMA الشامل',
 
