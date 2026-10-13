@@ -693,6 +693,50 @@
             margin-bottom: 14px;
         }
 
+        /* ---- restorative title banner (image background for the title) ---- */
+        .product-card.has-photo .card-head {
+            position: relative;
+            max-width: 100%;
+            margin: 0 0 28px;
+            padding: 42px 28px 38px;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: #0b0c0e;
+            background-image:
+                linear-gradient(180deg, rgba(8, 9, 10, 0.5) 0%, rgba(8, 9, 10, 0.82) 100%),
+                url('img/composite/comp-14.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        }
+
+        .product-card.has-photo .card-head h3 {
+            color: #fff;
+        }
+
+        .product-card.has-photo .card-head p {
+            color: rgba(233, 235, 238, 0.84);
+        }
+
+        .product-card.has-photo .card-head .product-icon {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+        }
+
+        .product-card.has-photo .card-head .price {
+            background: rgba(255, 255, 255, 0.14);
+            color: #fff;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 640px) {
+            .product-card.has-photo .card-head {
+                padding: 30px 18px 28px;
+            }
+        }
+
         .catalog {
             display: grid;
             gap: 18px;
