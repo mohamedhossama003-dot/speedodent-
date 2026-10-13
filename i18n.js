@@ -128,7 +128,8 @@
         'amalgam.how':     'How to use',
         'amalgam.extra':   'Additional information',
         /* --- amal1 : SDI GS-80 (Australia) --- */
-        'amal1.name':      'SDI GS-80 — High Strength Amalgam Capsules',
+        'amal1.name':      'SDI GS-80',
+        'amal1.title':     'High Strength Dental Amalgam Capsules',
         'amal1.alt':       'SDI GS-80 amalgam capsules',
         'amal1.origin':    'Origin: Australia — SDI (Southern Dental Industries)',
         'amal1.u1':        'Triturate the 2-spill capsule in an amalgamator for the time recommended for your device (about 10 seconds).',
@@ -139,7 +140,8 @@
         'amal1.e2':        'High compressive strength and a positive dimensional change for a good marginal seal.',
         'amal1.e3':        '2-spill fast-set capsules, 50 capsules per box.',
         /* --- amal2 : SolAloy / Trent Dent (United Kingdom) --- */
-        'amal2.name':      'SolAloy World Class — Trent Dent',
+        'amal2.name':      'SolAloy World Class',
+        'amal2.title':     'World Class Dispersed Phase',
         'amal2.alt':       'SolAloy Trent Dent amalgam capsules',
         'amal2.origin':    'Origin: United Kingdom — Trent Dent Products Ltd',
         'amal2.u1':        'Triturate the self-activating capsule in an amalgamator at the recommended speed and time.',
@@ -150,7 +152,8 @@
         'amal2.e2':        'Corrosion resistant — suitable for stress-bearing posterior restorations.',
         'amal2.e3':        'Self-activating disposable capsules, 2 spill, 50 capsules per box.',
         /* --- amal3 : YDA (China) --- */
-        'amal3.name':      'YDA Amalgam Alloy Capsules',
+        'amal3.name':      'YDA Amalgam Alloy',
+        'amal3.title':     'Amalgam Alloy Capsules',
         'amal3.alt':       'YDA amalgam alloy capsules',
         'amal3.origin':    'Origin: China — YDA',
         'amal3.u1':        'Activate and triturate the capsule in an amalgamator as recommended by the manufacturer.',
@@ -161,7 +164,8 @@
         'amal3.e2':        'Composition: silver, tin and copper (high copper) with no zinc.',
         'amal3.e3':        '2 spill, 50 capsules per box.',
         /* --- amal4 : World Work (Italy) --- */
-        'amal4.name':      'World Work — Self-Activating Amalgam Capsules',
+        'amal4.name':      'World Work Amalgam',
+        'amal4.title':     'Self-Activating Amalgam Capsules',
         'amal4.alt':       'World Work self-activating amalgam capsules',
         'amal4.origin':    'Origin: Italy — World Work Srl',
         'amal4.u1':        'Activate the capsule (press and twist), then triturate it in an amalgamator for the recommended time.',
@@ -853,7 +857,8 @@
         'amalgam.how':     'طريقة الاستخدام',
         'amalgam.extra':   'معلومات إضافية',
         /* --- amal1 : SDI GS-80 (أستراليا) --- */
-        'amal1.name':      'SDI GS-80 — كبسولات أملجم عالي القوة',
+        'amal1.name':      'SDI GS-80',
+        'amal1.title':     'كبسولات أملجم عالي القوة',
         'amal1.alt':       'كبسولات أملجم SDI GS-80',
         'amal1.origin':    'بلد المنشأ: أستراليا — SDI (Southern Dental Industries)',
         'amal1.u1':        'شغّل كبسولة الـ2 سبيل في الأملمجيتور للمدة الموصى بها لجهازك (حوالي 10 ثوانٍ).',
@@ -864,7 +869,8 @@
         'amal1.e2':        'قوة ضغط عالية مع تغيّر أبعادي موجب لختم حافي جيد.',
         'amal1.e3':        'كبسولات 2 سبيل سريعة التصلّب، 50 كبسولة في العلبة.',
         /* --- amal2 : SolAloy / Trent Dent (المملكة المتحدة) --- */
-        'amal2.name':      'SolAloy World Class — ترنت دنت',
+        'amal2.name':      'SolAloy World Class',
+        'amal2.title':     'طور متفرق — World Class',
         'amal2.alt':       'كبسولات أملجم SolAloy من ترنت دنت',
         'amal2.origin':    'بلد المنشأ: المملكة المتحدة — Trent Dent Products Ltd',
         'amal2.u1':        'شغّل الكبسولة ذاتية التنشيط في الأملمجيتور بالسرعة والمدة الموصى بها.',
@@ -875,7 +881,8 @@
         'amal2.e2':        'مقاومة للتآكل — مناسبة للحشوات الخلفية التي تتحمل الإجهاد.',
         'amal2.e3':        'كبسولات ذاتية التنشيط تُستخدم مرة واحدة، 2 سبيل، 50 كبسولة في العلبة.',
         /* --- amal3 : YDA (الصين) --- */
-        'amal3.name':      'YDA — كبسولات سبيكة أملجم',
+        'amal3.name':      'YDA Amalgam Alloy',
+        'amal3.title':     'كبسولات سبيكة أملجم',
         'amal3.alt':       'كبسولات سبيكة أملجم YDA',
         'amal3.origin':    'بلد المنشأ: الصين — YDA',
         'amal3.u1':        'نشّط الكبسولة وشغّلها في الأملمجيتور حسب توصيات الشركة المصنّعة.',
@@ -886,7 +893,8 @@
         'amal3.e2':        'التركيب: فضة وقصدير ونحاس (نحاس عالي) بدون زنك.',
         'amal3.e3':        '2 سبيل، 50 كبسولة في العلبة.',
         /* --- amal4 : World Work (إيطاليا) --- */
-        'amal4.name':      'World Work — كبسولات أملجم ذاتية التنشيط',
+        'amal4.name':      'World Work Amalgam',
+        'amal4.title':     'كبسولات أملجم ذاتية التنشيط',
         'amal4.alt':       'كبسولات أملجم World Work ذاتية التنشيط',
         'amal4.origin':    'بلد المنشأ: إيطاليا — World Work Srl',
         'amal4.u1':        'نشّط الكبسولة (اضغط ولفّ) ثم شغّلها في الأملمجيتور للمدة الموصى بها.',

@@ -1130,7 +1130,10 @@
             }
         }
 
-        /* ---- amalgam band: the four amalgam cards under the showcase ---- */
+        /* ---- amalgam band: four amalgam cards under the showcase.
+           They reuse the composite card system (.comp-card): photo + name,
+           a "Details" toggle and a WhatsApp order button beside it, and the
+           details unfold inside the same card. ---- */
         .amalgam-band {
             display: grid;
             gap: 12px;
@@ -1146,63 +1149,21 @@
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 14px;
+            align-items: start;
         }
 
-        .amalgam-card {
-            display: flex;
-            flex-direction: column;
-            background: var(--surface-soft);
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 13px;
-            box-shadow: var(--shadow);
+        /* the flyers are 16:9-ish, so keep their own ratio instead of the
+           square-ish 4/3 used by the composite photos (all four are equal
+           after normalising amalgam-2.jpg, so every closed card matches). */
+        .amalgam-row .comp-card-media .card-photo {
+            aspect-ratio: 1376 / 768;
         }
 
-        .amalgam-media {
-            border-radius: 14px;
-            overflow: hidden;
-            line-height: 0;
-            border: 1px solid rgba(199, 203, 209, 0.14);
-            background: var(--primary-soft);
-        }
-
-        .amalgam-media img {
-            display: block;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-            object-fit: cover;
-        }
-
-        .amalgam-body {
-            display: grid;
-            gap: 8px;
-            margin-top: 12px;
-        }
-
-        .amalgam-name {
-            margin: 0;
-            font-size: 0.96rem;
-            line-height: 1.4;
-        }
-
-        .amalgam-origin {
-            margin: 0;
-            font-size: 0.78rem;
-            line-height: 1.5;
+        .comp-details p.amalgam-origin {
+            font-size: 0.8rem;
+            line-height: 1.6;
             color: var(--muted);
-        }
-
-        .amalgam-body h6 {
-            margin: 6px 0 0;
-            font-size: 0.86rem;
-            font-weight: 700;
-            color: var(--silver);
-        }
-
-        .amalgam-body .omni-list li {
-            font-size: 0.82rem;
-            line-height: 1.55;
+            margin-bottom: 16px;
         }
 
         @media (max-width: 1080px) {
