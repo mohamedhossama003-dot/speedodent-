@@ -124,6 +124,8 @@
         'comp.more':       'Details',
         'comp.less':       'Hide',
         'comp.order':      'Order',
+        'amalgam.title':   'Amalgam',
+        'amalgam.alt':     'Amalgam capsules product',
         /* --- omni : how to use / additional information --- */
         'omni.how':           'How to use',
         'omni.u1':            'Isolate the tooth and prepare the cavity using your normal adhesive protocol.',
@@ -802,6 +804,8 @@
         'comp.more':       'التفاصيل',
         'comp.less':       'إخفاء',
         'comp.order':      'اطلب',
+        'amalgam.title':   'الأملجم',
+        'amalgam.alt':     'منتج أملجم',
         /* --- omni : how to use / additional information --- */
         'omni.how':           'طريقة الاستخدام',
         'omni.u1':            'اعزل السن وحضّر التجويف ببروتوكول اللصق المعتاد.',
