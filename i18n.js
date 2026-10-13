@@ -121,8 +121,9 @@
         'p.rest.img':      'Composite restorative product',
         'g.composite':     'Composite',
         'prod.order':      'Order on WhatsApp',
-        'comp.more':       'Know more',
-        'comp.less':       'Show less',
+        'comp.more':       'Details',
+        'comp.less':       'Hide',
+        'comp.order':      'Order',
         /* --- omni : how to use / additional information --- */
         'omni.how':           'How to use',
         'omni.u1':            'Isolate the tooth and prepare the cavity using your normal adhesive protocol.',
@@ -798,8 +799,9 @@
         'p.rest.img':      'منتج كمبوزيت ترميمي',
         'g.composite':     'الكمبوزيت',
         'prod.order':      'اطلب عبر واتساب',
-        'comp.more':       'معرفة المزيد',
-        'comp.less':       'إظهار أقل',
+        'comp.more':       'التفاصيل',
+        'comp.less':       'إخفاء',
+        'comp.order':      'اطلب',
         /* --- omni : how to use / additional information --- */
         'omni.how':           'طريقة الاستخدام',
         'omni.u1':            'اعزل السن وحضّر التجويف ببروتوكول اللصق المعتاد.',
