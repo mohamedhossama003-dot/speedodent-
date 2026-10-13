@@ -728,7 +728,7 @@
             inset: 0;
             z-index: 1;
             pointer-events: none;
-            background: linear-gradient(180deg, rgba(8, 9, 10, 0.5) 0%, rgba(8, 9, 10, 0.82) 100%);
+            background: linear-gradient(180deg, rgba(8, 9, 10, 0.4) 0%, rgba(8, 9, 10, 0.64) 100%);
         }
 
         .product-card.has-photo .card-head > *:not(.comp-banner-slide) {
@@ -744,10 +744,12 @@
 
         .product-card.has-photo .card-head h3 {
             color: #fff;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
         }
 
         .product-card.has-photo .card-head p {
-            color: rgba(233, 235, 238, 0.84);
+            color: rgba(238, 241, 244, 0.92);
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
         }
 
         .product-card.has-photo .card-head .product-icon {

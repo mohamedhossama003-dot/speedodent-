@@ -630,7 +630,13 @@ if (window.SD) {
   paint(layers[0], images[0]);
   layers[0].classList.add('is-active');
 
-  if (reduce || images.length < 2) return;
+  if (images.length < 2) return;
+
+  /* every photo must keep cycling; if the visitor asked for reduced
+     motion, swap instantly instead of animating the cross-fade */
+  if (reduce) {
+    layers.forEach(function (layer) { layer.style.transition = 'none'; });
+  }
 
   /* warm the next frame so the cross-fade never reveals a blank layer */
   preload(images[1]);
