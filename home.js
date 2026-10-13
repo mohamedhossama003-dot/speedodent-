@@ -591,3 +591,58 @@ if (window.SD) {
     };
   }
 })();
+
+/* ============================================================
+   RESTORATIVE TITLE BANNER  -  cycles through every product
+   photo in img/composite as an auto-changing background of the
+   Restorative header. Two stacked layers cross-fade so only one
+   new image is downloaded at a time.
+   ============================================================ */
+(function () {
+  const head = document.querySelector('.product-card.has-photo .card-head');
+  if (!head) return;
+
+  const images = [];
+  for (let i = 1; i <= 48; i++) {
+    images.push('img/composite/comp-' + (i < 10 ? '0' + i : i) + '.jpg');
+  }
+
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const layers = [document.createElement('div'), document.createElement('div')];
+  layers.forEach(function (layer) {
+    layer.className = 'comp-banner-slide';
+    layer.setAttribute('aria-hidden', 'true');
+    head.insertBefore(layer, head.firstChild);
+  });
+
+  let current = 0;
+  let index = 0;
+
+  function paint(layer, src) {
+    layer.style.backgroundImage = 'url("' + src + '")';
+  }
+  function preload(src) {
+    const im = new Image();
+    im.src = src;
+  }
+
+  paint(layers[0], images[0]);
+  layers[0].classList.add('is-active');
+
+  if (reduce || images.length < 2) return;
+
+  /* warm the next frame so the cross-fade never reveals a blank layer */
+  preload(images[1]);
+
+  setInterval(function () {
+    index = (index + 1) % images.length;
+    const next = layers[1 - current];
+    paint(next, images[index]);
+    void next.offsetWidth;
+    next.classList.add('is-active');
+    layers[current].classList.remove('is-active');
+    current = 1 - current;
+    preload(images[(index + 1) % images.length]);
+  }, 4500);
+})();

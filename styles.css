@@ -693,7 +693,7 @@
             margin-bottom: 14px;
         }
 
-        /* ---- restorative title banner (image background for the title) ---- */
+        /* ---- restorative title banner (auto-rotating image background) ---- */
         .product-card.has-photo .card-head {
             position: relative;
             max-width: 100%;
@@ -702,13 +702,44 @@
             border-radius: 16px;
             overflow: hidden;
             background-color: #0b0c0e;
-            background-image:
-                linear-gradient(180deg, rgba(8, 9, 10, 0.5) 0%, rgba(8, 9, 10, 0.82) 100%),
-                url('img/composite/comp-14.jpg');
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        }
+
+        .comp-banner-slide {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-color: #0b0c0e;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+            opacity: 0;
+            transition: opacity 1.2s ease;
+            pointer-events: none;
+        }
+
+        .comp-banner-slide.is-active {
+            opacity: 1;
+        }
+
+        .product-card.has-photo .card-head::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: linear-gradient(180deg, rgba(8, 9, 10, 0.5) 0%, rgba(8, 9, 10, 0.82) 100%);
+        }
+
+        .product-card.has-photo .card-head > *:not(.comp-banner-slide) {
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .comp-banner-slide {
+                transition: none;
+            }
         }
 
         .product-card.has-photo .card-head h3 {
