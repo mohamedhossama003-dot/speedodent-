@@ -1180,19 +1180,23 @@
 
         /* ---- matrial band: glass ionomer / cements / bonding cards under the
            showcase, mirroring the amalgam band and reusing the composite card
-           system (.comp-card). ---- */
-        .matrial-band {
+           system (.comp-card). The iso band (isolation / liners / bases) shares
+           the same 4-up layout. ---- */
+        .matrial-band,
+        .iso-band {
             display: grid;
             gap: 12px;
         }
 
-        .matrial-band-title {
+        .matrial-band-title,
+        .iso-band-title {
             margin: 8px 0 0;
             font-size: 1.05rem;
             letter-spacing: 0.02em;
         }
 
-        .matrial-row {
+        .matrial-row,
+        .iso-row {
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 14px;
@@ -1203,13 +1207,15 @@
            the default card-photo ratio, so the whole product stays visible. */
 
         @media (max-width: 1080px) {
-            .matrial-row {
+            .matrial-row,
+            .iso-row {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
         @media (max-width: 640px) {
-            .matrial-row {
+            .matrial-row,
+            .iso-row {
                 grid-template-columns: 1fr;
             }
         }
