@@ -45,6 +45,7 @@
         'hero.lead':       'Your choice for premium quality and professionally designed details',
         'hero.cta1':       'Explore Products',
         'hero.cta2':       'Contact Us',
+        'hero.service':    'At the service of <strong>Dr. Arwa Mohammed Saleh</strong>',
 
         /* products */
         'products.title':  'Our Products',
@@ -1116,6 +1117,7 @@
         'hero.lead':       'اختيارك لأجود جودة وتفاصيل مصممة باحتراف',
         'hero.cta1':       'استكشف المنتجات',
         'hero.cta2':       'تواصل معنا',
+        'hero.service':    'نحن في خدمة <strong>دكتور أروى محمد صالح</strong>',
 
         /* products */
         'products.title':  'منتجاتنا',

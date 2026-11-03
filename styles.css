@@ -310,6 +310,36 @@
             flex-wrap: wrap;
         }
 
+        /* Dedication line under the hero buttons */
+        .hero p.hero-service {
+            margin: 34px auto 0;
+            font-size: 1rem;
+            color: var(--muted);
+        }
+
+        .hero p.hero-service::before {
+            content: '';
+            display: block;
+            width: 54px;
+            height: 1px;
+            margin: 0 auto 16px;
+            background: currentColor;
+            opacity: 0.45;
+        }
+
+        .hero p.hero-service strong {
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        :root.light-mode .hero p.hero-service strong {
+            color: var(--dark);
+        }
+
+        html[lang="en"] .hero p.hero-service {
+            letter-spacing: 0.05em;
+        }
+
         .btn-primary,
         .btn-secondary {
             display: inline-block;
