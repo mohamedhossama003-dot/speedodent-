@@ -340,6 +340,16 @@
             letter-spacing: 0.05em;
         }
 
+        .hero p.hero-service-note {
+            margin: 8px auto 0;
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+
+        html[lang="en"] .hero p.hero-service-note {
+            letter-spacing: 0.04em;
+        }
+
         .btn-primary,
         .btn-secondary {
             display: inline-block;

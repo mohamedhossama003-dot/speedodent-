@@ -46,6 +46,7 @@
         'hero.cta1':       'Explore Products',
         'hero.cta2':       'Contact Us',
         'hero.service':    'At the service of <strong>Dr. Arwa Mohammed Saleh</strong>',
+        'hero.brandNote':  'The brand is dedicated to her',
 
         /* products */
         'products.title':  'Our Products',
@@ -1118,6 +1119,7 @@
         'hero.cta1':       'استكشف المنتجات',
         'hero.cta2':       'تواصل معنا',
         'hero.service':    'نحن في خدمة <strong>دكتور أروى محمد صالح</strong>',
+        'hero.brandNote':  'البرند مقدم لها',
 
         /* products */
         'products.title':  'منتجاتنا',
